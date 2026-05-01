@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>GOOD AS HELL INSIDE & OUT — Tropicana × Lizzo</title>
+
+<!-- ── SEO ── -->
+<meta name="description" content="Tropicana × Lizzo — Bold new prebiotic soda. 4 flavours. Zero apologies. Good As Hell Inside & Out."/>
+<meta name="keywords" content="Tropicana, Lizzo, prebiotic soda, gut health, Good As Hell, flavoured drinks"/>
+<meta name="author" content="Tropicana × Lizzo"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://tropicana-lizzo.vercel.app/"/>
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://tropicana-lizzo.vercel.app/"/>
+<meta property="og:title" content="GOOD AS HELL INSIDE & OUT — Tropicana × Lizzo"/>
+<meta property="og:description" content="Bold new prebiotic soda powered by gut goodness and Lizzo energy. Prebiotic. Delicious. Unapologetic."/>
+<meta property="og:image" content="https://tropicana-lizzo.vercel.app/og-image.png"/>
+<meta property="og:site_name" content="Tropicana × Lizzo"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- ── Twitter Card ── -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@lizzo"/>
+<meta name="twitter:title" content="GOOD AS HELL INSIDE & OUT — Tropicana × Lizzo"/>
+<meta name="twitter:description" content="Bold new prebiotic soda powered by gut goodness and Lizzo energy."/>
+<meta name="twitter:image" content="https://tropicana-lizzo.vercel.app/og-image.png"/>
+
+<!-- ── Favicon (emoji) ── -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧃</text></svg>"/>
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧃</text></svg>"/>
+<meta name="theme-color" content="#FF7A00"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+<!-- ── Performance: DNS + Preconnect ── -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+<!-- ── Fonts ── -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --orange:#FF7A00;--gold:#FFB000;--lime:#C7FF3D;--coral:#FF5C5C;
+  --pink:#FF4FA3;--purple:#6A32FF;--black:#131313;--cream:#FFF9F1;
+  --white:#ffffff;--glass:rgba(255,255,255,0.07);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--black);color:var(--cream);
+  font-family:'Bricolage Grotesque',sans-serif;
+  overflow-x:hidden;cursor:none
+}
+
+/* GRAIN */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9997;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:0.035;mix-blend-mode:overlay
+}
+
+/* ── CURSOR ── */
+#cur{position:fixed;width:12px;height:12px;border-radius:50%;background:var(--lime);pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:exclusion;transition:width .2s,height .2s,background .25s}
+#cur-ring{position:fixed;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(199,255,61,.45);pointer-events:none;z-index:9998;transform:translate(-50%,-50%);mix-blend-mode:exclusion;transition:width .35s,height .35s,border-color .3s}
+#cur-trail{position:fixed;pointer-events:none;z-index:9996}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--black)}
+::-webkit-scrollbar-thumb{background:linear-gradient(#C7FF3D,#FF7A00,#FF4FA3);border-radius:10px}
+
+/* ── PRELOADER ── */
+#preloader{position:fixed;inset:0;z-index:10000;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;transition:opacity 1s ease,visibility 1s ease}
+#preloader.out{opacity:0;visibility:hidden;pointer-events:none}
+.pre-bg{position:absolute;inset:0;overflow:hidden}
+.pre-blob{position:absolute;border-radius:50%;filter:blur(120px);animation:preBlobDrift linear infinite}
+@keyframes preBlobDrift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(60px,-60px) scale(1.15)}100%{transform:translate(0,0) scale(1)}}
+.pre-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:1.8rem;animation:preIn .9s ease both}
+@keyframes preIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.pre-ring-outer{width:140px;height:140px;border-radius:50%;background:conic-gradient(var(--orange),var(--pink),var(--purple),var(--lime),var(--orange));animation:preRingSpin 2.5s linear infinite;display:flex;align-items:center;justify-content:center;box-shadow:0 0 100px rgba(255,122,0,.4)}
+@keyframes preRingSpin{to{transform:rotate(360deg)}}
+.pre-ring-inner{width:118px;height:118px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;font-size:3rem;animation:preIconPop 1.5s ease-in-out infinite alternate}
+@keyframes preIconPop{from{transform:scale(.92)}to{transform:scale(1.08)}}
+.pre-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,6vw,4rem);letter-spacing:.25em;background:linear-gradient(135deg,#ff9200,#ff4fa3,#6a32ff,#c7ff3d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradShift 3s ease infinite alternate}
+@keyframes gradShift{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(40deg)}}
+.pre-sub{font-family:'Space Mono',monospace;font-size:.75rem;letter-spacing:.25em;color:rgba(255,249,241,.4);min-height:1.4rem;text-align:center}
+.pre-bar{width:280px;height:3px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;margin-top:.5rem}
+.pre-fill{height:100%;background:linear-gradient(90deg,var(--lime),var(--orange),var(--pink));width:0%;transition:width 3.8s cubic-bezier(.4,0,.2,1);position:relative}
+.pre-fill::after{content:'';position:absolute;right:0;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime);animation:fillDot 1s ease-in-out infinite alternate}
+@keyframes fillDot{from{opacity:.6}to{opacity:1}}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.1rem 3.5rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav.scrolled{background:rgba(7,7,7,.9);backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.05)}
+.nav-brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.nav-pill{background:linear-gradient(135deg,var(--orange),var(--pink));border-radius:100px;padding:.35rem 1.1rem;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.15em;color:var(--black)}
+.nav-x{color:rgba(255,249,241,.3);font-size:.8rem;font-weight:700}
+.nav-liz{font-family:'Space Mono',monospace;font-size:.75rem;font-style:italic;color:var(--pink)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,249,241,.55);text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav-links a:hover{color:var(--lime)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{background:linear-gradient(135deg,var(--lime),#a3d900);color:var(--black);border:none;padding:.65rem 1.7rem;border-radius:100px;font-family:'Bricolage Grotesque',sans-serif;font-size:.82rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;cursor:none;transition:transform .2s,box-shadow .3s;box-shadow:0 0 28px rgba(199,255,61,.2)}
+.nav-cta:hover{transform:scale(1.06) translateY(-1px);box-shadow:0 0 56px rgba(199,255,61,.55)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden;background:#181818}
+/* Animated mesh */
+.hero-mesh{position:absolute;inset:0;pointer-events:none;z-index:0}
+.blob{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform;animation:blobDrift 14s ease-in-out infinite}
+.b1{width:700px;height:700px;background:radial-gradient(circle,rgba(255,122,0,.4),transparent 68%);top:-200px;left:-200px;animation-delay:0s}
+.b2{width:600px;height:600px;background:radial-gradient(circle,rgba(255,79,163,.32),transparent 68%);bottom:-150px;right:-100px;animation-delay:5s}
+.b3{width:450px;height:450px;background:radial-gradient(circle,rgba(199,255,61,.16),transparent 68%);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:9s}
+.b4{width:400px;height:400px;background:radial-gradient(circle,rgba(106,50,255,.3),transparent 68%);bottom:25%;left:5%;animation-delay:2.5s}
+.b5{width:350px;height:350px;background:radial-gradient(circle,rgba(255,176,0,.14),transparent 68%);top:15%;right:15%;animation-delay:7s}
+@keyframes blobDrift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(45px,-55px) scale(1.08)}66%{transform:translate(-32px,32px) scale(.94)}}
+/* Grid */
+.hero-grid{position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(255,122,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,122,0,.045) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,black 30%,transparent 100%)}
+/* Wave SVG bottom */
+.hero-wave{position:absolute;bottom:-2px;left:0;right:0;z-index:1;pointer-events:none}
+
+/* Floating decos */
+.deco{position:absolute;pointer-events:none;font-size:1.8rem;animation:decoFloat 8s ease-in-out infinite;will-change:transform}
+@keyframes decoFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-22px) rotate(180deg)}}
+.deco-ring{position:absolute;border-radius:50%;border:2px solid;opacity:.22;animation:decoSpin linear infinite;pointer-events:none;will-change:transform}
+@keyframes decoSpin{to{transform:rotate(360deg)}}
+
+/* Fruit emojis floating */
+.fruit{position:absolute;pointer-events:none;animation:fruitFloat linear infinite;will-change:transform;user-select:none}
+@keyframes fruitFloat{0%{transform:translateY(0) rotate(0deg);opacity:.8}50%{transform:translateY(-30px) rotate(180deg);opacity:.5}100%{transform:translateY(0) rotate(360deg);opacity:.8}}
+
+.hero-inner{position:relative;z-index:2;max-width:1400px;width:100%;margin:0 auto;display:grid;grid-template-columns:1.15fr 1fr;gap:4rem;align-items:center}
+.hero-left{}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,122,0,.1);border:1px solid rgba(255,122,0,.35);border-radius:100px;padding:.45rem 1.4rem;margin-bottom:1.75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);animation:fadeUp .8s ease .2s both;font-weight:600}
+.badge-pulse{width:6px;height:6px;border-radius:50%;background:var(--orange);animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(2);opacity:.4}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+.hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4.5rem,11vw,10.5rem);line-height:.85;letter-spacing:.015em;margin-bottom:1.5rem}
+.h1-l1{display:block;background:linear-gradient(105deg,#fff5e0 0%,#ffd580 35%,#ff8c00 65%,#ff4500 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 80px rgba(255,122,0,.35));animation:fadeUp .9s ease .35s both}
+.h1-l2{display:block;background:linear-gradient(105deg,#ffb3d9 0%,#ff4fa3 40%,#a040ff 70%,#6a32ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 80px rgba(255,79,163,.4));animation:fadeUp .9s ease .5s both}
+.h1-sticker{display:inline-block;background:var(--lime);color:var(--black);font-family:'Space Mono',monospace;font-size:.5rem;font-style:italic;letter-spacing:.05em;padding:.22rem .7rem;border-radius:.3rem;transform:rotate(-3deg);vertical-align:super;margin-left:.4rem;position:relative;top:-.5rem;animation:wiggle 3s ease-in-out infinite}
+@keyframes wiggle{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+
+.hero-sub{font-size:clamp(1rem,2vw,1.25rem);color:rgba(255,249,241,.6);max-width:520px;line-height:1.7;margin-bottom:2rem;animation:fadeUp .9s ease .65s both}
+.hero-sub strong{color:var(--lime)}
+
+.hero-pills{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:2.25rem;animation:fadeUp .9s ease .75s both}
+.hpill{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:100px;padding:.3rem .9rem;font-size:.76rem;letter-spacing:.07em;color:rgba(255,249,241,.65);font-weight:500}
+.hpill.lime{border-color:rgba(199,255,61,.4);color:var(--lime);background:rgba(199,255,61,.06)}
+.hpill.orng{border-color:rgba(255,122,0,.4);color:var(--orange);background:rgba(255,122,0,.06)}
+.hpill.pink{border-color:rgba(255,79,163,.4);color:var(--pink);background:rgba(255,79,163,.06)}
+
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .9s ease .9s both}
+.btn-primary{background:linear-gradient(135deg,#ff9200,#ff4500);color:var(--black);border:none;padding:.95rem 2.3rem;border-radius:100px;font-family:'Bricolage Grotesque',sans-serif;font-size:.88rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:none;transition:transform .2s,box-shadow .3s;box-shadow:0 4px 32px rgba(255,122,0,.4);position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.28),transparent);opacity:0;transition:opacity .3s}
+.btn-primary:hover{transform:scale(1.05) translateY(-3px);box-shadow:0 16px 60px rgba(255,122,0,.6)}
+.btn-primary:hover::after{opacity:1}
+.btn-outline{background:transparent;color:var(--cream);border:1.5px solid rgba(255,249,241,.22);padding:.95rem 2.3rem;border-radius:100px;font-family:'Bricolage Grotesque',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:none;transition:border-color .3s,background .3s,transform .2s}
+.btn-outline:hover{border-color:rgba(255,249,241,.65);background:rgba(255,249,241,.05);transform:translateY(-2px)}
+.btn-lime{background:transparent;color:var(--lime);border:1.5px solid rgba(199,255,61,.5);padding:.95rem 2.3rem;border-radius:100px;font-family:'Bricolage Grotesque',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:none;transition:background .3s,color .3s,transform .2s,box-shadow .3s}
+.btn-lime:hover{background:var(--lime);color:var(--black);transform:translateY(-2px);box-shadow:0 10px 40px rgba(199,255,61,.4)}
+
+/* Magnetic wrapper */
+.magnetic{display:inline-block;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
+
+/* ── 3D CAN SCENE ── */
+.hero-right{position:relative;display:flex;align-items:center;justify-content:center;height:600px}
+.can-scene{position:relative;width:220px;height:440px;perspective:1200px;margin:0 auto;animation:canFloat 5s ease-in-out infinite}
+@keyframes canFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-28px)}}
+.can-3d{width:100%;height:100%;position:relative;transform-style:preserve-3d;transform:rotateX(8deg) rotateY(-20deg);animation:canRotate 8s ease-in-out infinite;will-change:transform}
+@keyframes canRotate{0%,100%{transform:rotateX(8deg) rotateY(-20deg)}50%{transform:rotateX(-4deg) rotateY(20deg)}}
+.can-body-3d{width:100%;height:100%;border-radius:40% 40% 35% 35%/50% 50% 40% 40%;background:linear-gradient(165deg,#ffe08a 0%,#ff9500 22%,#ff6800 48%,#c44000 78%,#7a2000 100%);position:relative;overflow:hidden;box-shadow:0 40px 100px rgba(255,122,0,.45),0 0 0 2px rgba(255,200,100,.25),inset -25px 0 50px rgba(0,0,0,.35),inset 12px 0 25px rgba(255,255,255,.18);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem}
+.can-highlight{position:absolute;top:0;left:7%;width:22%;height:100%;background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,.06),transparent);border-radius:0 0 40% 40%}
+.can-highlight2{position:absolute;top:0;left:17%;width:7%;height:55%;background:rgba(255,255,255,.25);border-radius:0 0 50% 50%}
+.can-shadow-line{position:absolute;right:10%;top:0;width:3px;height:100%;background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.1),rgba(0,0,0,.3));border-radius:2px}
+.can-top{position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:72%;height:28px;background:linear-gradient(180deg,#d4a000,#9a7000);border-radius:50%;border-top:1px solid rgba(255,220,100,.5)}
+.can-top::after{content:'';position:absolute;top:4px;left:8%;width:84%;height:50%;background:rgba(255,210,100,.35);border-radius:50%}
+.can-brand-txt{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.18em;color:rgba(0,0,0,.75);position:relative;z-index:1}
+.can-icon{font-size:3.8rem;position:relative;z-index:1;filter:drop-shadow(0 6px 16px rgba(0,0,0,.4));animation:iconSpin 6s ease-in-out infinite}
+@keyframes iconSpin{0%,100%{transform:rotate(-5deg) scale(1)}25%{transform:rotate(5deg) scale(1.1)}75%{transform:rotate(-3deg) scale(.95)}}
+.can-tagline{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:rgba(0,0,0,.55);position:relative;z-index:1;font-style:italic}
+/* Can orbits */
+.can-orbit{position:absolute;border-radius:50%;border:1px dashed rgba(255,122,0,.25);animation:orbitSpin linear infinite;pointer-events:none}
+.can-orbit::before{content:'✦';position:absolute;top:0;left:50%;transform:translateX(-50%);color:var(--lime);font-size:.9rem}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+/* Bubbles from can */
+.can-bubble{position:absolute;border-radius:50%;background:rgba(255,255,255,.6);animation:bubbleRise linear infinite;will-change:transform;pointer-events:none;box-shadow:inset -2px -2px 4px rgba(0,0,0,.1),inset 2px 2px 6px rgba(255,255,255,.8)}
+@keyframes bubbleRise{0%{transform:translateY(0) translateX(0) scale(1);opacity:.8}50%{transform:translateY(-100px) translateX(calc(var(--dx,10px))) scale(.85);opacity:.4}100%{transform:translateY(-200px) translateX(calc(var(--dx,10px)*2)) scale(.5);opacity:0}}
+/* Splash ring */
+.splash-ring{position:absolute;border-radius:50%;border:2px solid rgba(255,122,0,.4);animation:splashExpand 3s ease-out infinite;pointer-events:none}
+@keyframes splashExpand{0%{width:80px;height:80px;opacity:.8;transform:translate(-50%,-50%)}100%{width:280px;height:280px;opacity:0;transform:translate(-50%,-50%)}}
+/* Juice drip */
+.juice-drip{position:absolute;width:6px;height:20px;background:linear-gradient(var(--orange),transparent);border-radius:0 0 50% 50%;animation:dripFall linear infinite;pointer-events:none}
+@keyframes dripFall{0%{transform:translateY(-10px);opacity:1}100%{transform:translateY(60px);opacity:0}}
+/* Floating fruit icons around can */
+.float-fruit{position:absolute;font-size:1.6rem;animation:fruitOrbit linear infinite;will-change:transform;pointer-events:none}
+@keyframes fruitOrbit{from{transform:rotate(0deg) translateX(160px) rotate(0deg)}to{transform:rotate(360deg) translateX(160px) rotate(-360deg)}}
+
+/* Scroll indicator */
+.scroll-ind{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.45rem;opacity:.4;animation:scrollBounce 2s ease-in-out infinite;z-index:2}
+@keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+.scroll-ind span{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;font-family:'Space Mono',monospace}
+.scroll-line{width:1px;height:44px;background:linear-gradient(var(--orange),transparent)}
+
+/* ── TICKER ── */
+.ticker-wrap{overflow:hidden;white-space:nowrap;position:relative}
+.ticker-wrap.lime{background:var(--lime);padding:.85rem 0}
+.ticker-wrap.orange{background:var(--orange);padding:.75rem 0}
+.ticker-wrap.dark{background:#0e0e0e;padding:.75rem 0;border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}
+.ticker-inner{display:inline-flex;animation:tick 28s linear infinite}
+.ticker-inner.rev{animation-direction:reverse}
+.ticker-inner.fast{animation-duration:16s}
+.ticker-inner.slow{animation-duration:42s}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker-wrap.lime .ticker-inner span{font-family:'Bebas Neue',sans-serif;font-size:1.25rem;letter-spacing:.18em;padding:0 1.8rem;color:var(--black)}
+.ticker-wrap.lime .ticker-inner .dot{color:var(--orange)}
+.ticker-wrap.orange .ticker-inner span{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem;color:var(--black)}
+.ticker-wrap.dark .ticker-inner span{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem;color:rgba(255,249,241,.45)}
+.neon-text span{
+  background:linear-gradient(90deg,var(--lime),var(--orange),var(--pink),var(--purple),var(--lime));
+  background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:neonShift 6s linear infinite
+}
+@keyframes neonShift{to{background-position:-300% 0}}
+
+/* ── SECTION BASE ── */
+section{position:relative;overflow:hidden}
+.s-tag{display:inline-flex;align-items:center;gap:.5rem;border-radius:100px;padding:.4rem 1.2rem;font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem}
+.s-tag.lime{background:rgba(199,255,61,.1);border:1px solid rgba(199,255,61,.28);color:var(--lime)}
+.s-tag.orange{background:rgba(255,122,0,.1);border:1px solid rgba(255,122,0,.28);color:var(--orange)}
+.s-tag.pink{background:rgba(255,79,163,.1);border:1px solid rgba(255,79,163,.28);color:var(--pink)}
+.s-tag.purple{background:rgba(106,50,255,.1);border:1px solid rgba(106,50,255,.28);color:#b899ff}
+.s-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,7.5vw,6rem);line-height:.9;letter-spacing:.02em}
+.s-title.warm{background:linear-gradient(135deg,var(--cream),var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.s-title.cool{background:linear-gradient(135deg,var(--cream),var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.s-title.lim{background:linear-gradient(135deg,var(--cream),var(--lime));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.s-sub{color:rgba(255,249,241,.5);font-size:1rem;max-width:500px;line-height:1.65;margin-top:.7rem}
+
+/* ── LIZZO SECTION ── */
+#lizzo{min-height:100vh;background:linear-gradient(150deg,#1a0038,#2e0068 30%,#3c0088 55%,#220050 80%,#180030);position:relative;overflow:hidden}
+.l-orbs{position:absolute;inset:0;pointer-events:none}
+.lorb{position:absolute;border-radius:50%;filter:blur(130px);animation:lorbFloat 9s ease-in-out infinite}
+.lorb1{width:620px;height:620px;background:rgba(106,50,255,.28);top:-15%;left:-12%;animation-delay:0s}
+.lorb2{width:520px;height:520px;background:rgba(255,79,163,.22);bottom:-12%;right:-8%;animation-delay:4s}
+.lorb3{width:360px;height:360px;background:rgba(255,122,0,.12);top:40%;left:42%;animation-delay:7s}
+@keyframes lorbFloat{0%,100%{transform:translate(0,0)}33%{transform:translate(38px,-38px)}66%{transform:translate(-28px,28px)}}
+.l-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,79,163,.07) 1.5px,transparent 1.5px);background-size:38px 38px}
+
+.lizzo-wrap{max-width:1400px;margin:0 auto;padding:8rem 5%;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
+.lizzo-img-box{position:relative;border-radius:2.5rem;overflow:hidden;aspect-ratio:.82;border:1px solid rgba(255,79,163,.18);background:linear-gradient(145deg,rgba(255,79,163,.06),rgba(106,50,255,.06));display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 50px 130px rgba(255,79,163,.14)}
+.lizzo-img-box::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,79,163,.12),rgba(106,50,255,.1));animation:imgGlow 4s ease-in-out infinite alternate}
+@keyframes imgGlow{from{opacity:.4}to{opacity:1}}
+.lizzo-icon{font-size:5.5rem;position:relative;z-index:1;animation:iconFloat 4s ease-in-out infinite}
+@keyframes iconFloat{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-14px) rotate(5deg)}}
+.lizzo-img-lbl{position:relative;z-index:1;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,79,163,.55);margin-top:.6rem}
+.lizzo-img-box::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(255,79,163,.4),transparent) top left / 44px 2px no-repeat,linear-gradient(to bottom,rgba(255,79,163,.4),transparent) top left / 2px 44px no-repeat,linear-gradient(to left,rgba(255,79,163,.4),transparent) bottom right / 44px 2px no-repeat,linear-gradient(to top,rgba(255,79,163,.4),transparent) bottom right / 2px 44px no-repeat;pointer-events:none}
+.liz-badge1{position:absolute;bottom:9%;left:-14%;background:var(--pink);color:var(--black);padding:.75rem 1.5rem;border-radius:1rem;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.1em;transform:rotate(-6deg);box-shadow:0 12px 40px rgba(255,79,163,.45);animation:badgeWag 4s ease-in-out infinite}
+.liz-badge2{position:absolute;top:7%;right:-9%;background:var(--lime);color:var(--black);padding:.6rem 1.25rem;border-radius:.75rem;font-family:'Space Mono',monospace;font-size:.75rem;transform:rotate(5deg);box-shadow:0 8px 30px rgba(199,255,61,.35);animation:badgeWag 5s ease-in-out infinite 1.2s}
+@keyframes badgeWag{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(-4deg) translateY(-7px)}}
+
+.lizzo-right{display:flex;flex-direction:column;gap:2.5rem}
+.lizzo-kicker{font-family:'Space Mono',monospace;font-size:.78rem;font-style:italic;color:var(--pink);letter-spacing:.06em}
+.lizzo-h{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,7.5vw,7.5rem);line-height:.88;letter-spacing:.02em;background:linear-gradient(135deg,#fff,#ffaad9 50%,#6a32ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 60px rgba(255,79,163,.2))}
+.lizzo-desc{color:rgba(255,249,241,.58);font-size:1rem;line-height:1.72;max-width:460px}
+
+/* Soundwave */
+.sw-wrap{display:flex;align-items:center;gap:2px;height:44px}
+.sw-b{flex:1;border-radius:2px;min-height:3px;animation:swWave 1.2s ease-in-out infinite;background:linear-gradient(to top,var(--purple),var(--pink))}
+@keyframes swWave{0%,100%{transform:scaleY(.18)}50%{transform:scaleY(1)}}
+
+.lyric-stack{display:flex;flex-direction:column;gap:.7rem}
+.lyric-item{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:1rem;padding:1rem 1.4rem;transition:all .3s;cursor:none;position:relative;overflow:hidden}
+.lyric-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--pink),var(--purple));transform:scaleY(0);transform-origin:bottom;transition:transform .3s}
+.lyric-item:hover{background:rgba(255,79,163,.08);border-color:rgba(255,79,163,.22);transform:translateX(10px);box-shadow:8px 0 30px rgba(255,79,163,.1)}
+.lyric-item:hover::before{transform:scaleY(1)}
+.lyric-n{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:rgba(255,249,241,.18);min-width:2ch;letter-spacing:.1em}
+.lyric-t{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.08em;color:var(--cream)}
+.lyric-t em{color:var(--pink);font-style:normal}
+.lyric-arr{margin-left:auto;color:rgba(255,249,241,.18);transition:color .3s,transform .3s}
+.lyric-item:hover .lyric-arr{color:var(--pink);transform:translateX(5px)}
+
+/* ── QUIZ ── */
+#quiz{padding:9rem 5%;background:linear-gradient(160deg,#200808,#330a0a 35%,#2a0606 65%,#1c0505);display:flex;flex-direction:column;align-items:center;position:relative}
+#quiz::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1100px;height:650px;background:radial-gradient(ellipse,rgba(255,80,80,.07),transparent 70%);pointer-events:none}
+#quiz::after{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,80,80,.06) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 68% 58% at 50% 50%,black,transparent)}
+
+.quiz-shell{width:100%;max-width:720px;position:relative;z-index:2;margin-top:3.5rem}
+.quiz-shell::before,.quiz-shell::after{content:'';position:absolute;width:60px;height:60px;border-color:rgba(255,80,80,.35);border-style:solid;pointer-events:none}
+.quiz-shell::before{top:-10px;left:-10px;border-width:2px 0 0 2px;border-radius:6px 0 0 0}
+.quiz-shell::after{bottom:-10px;right:-10px;border-width:0 2px 2px 0;border-radius:0 0 6px 0}
+
+.quiz-card{background:linear-gradient(145deg,rgba(255,80,80,.06),rgba(150,20,20,.04));border:1px solid rgba(255,80,80,.14);border-radius:2rem;padding:3rem;box-shadow:0 0 120px rgba(255,80,80,.05),inset 0 1px 0 rgba(255,255,255,.07)}
+.quiz-prog{display:flex;gap:.5rem;margin-bottom:2.25rem}
+.ps{flex:1;height:5px;background:rgba(255,255,255,.06);border-radius:3px;transition:background .5s,transform .3s;position:relative;overflow:hidden}
+.ps.done{background:var(--coral)}
+.ps.active{background:#ff5050;transform:scaleY(1.5)}
+.ps.active::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shimmer 1.5s ease-in-out infinite}
+@keyframes shimmer{from{transform:translateX(-100%)}to{transform:translateX(200%)}}
+
+.quiz-q-lbl{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.15em;color:#ff8080;text-transform:uppercase;margin-bottom:.7rem}
+.quiz-q-txt{font-family:'Bebas Neue',sans-serif;font-size:2.3rem;letter-spacing:.04em;color:var(--cream);margin-bottom:.35rem;line-height:1.1}
+.quiz-hint{color:rgba(255,249,241,.38);font-size:.85rem;margin-bottom:2rem;font-style:italic}
+.quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.qopt{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.09);border-radius:1.1rem;padding:1.1rem 1.2rem;color:var(--cream);font-family:'Bricolage Grotesque',sans-serif;font-size:.9rem;font-weight:600;cursor:none;transition:all .25s;text-align:left;display:flex;align-items:center;gap:.8rem;position:relative;overflow:hidden}
+.qopt::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(199,255,61,.07),transparent);opacity:0;transition:opacity .25s}
+.qopt:hover{border-color:rgba(255,80,80,.55);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,80,80,.12)}
+.qopt:hover::before{opacity:1}
+.qopt.sel{border-color:#ff5050;background:rgba(255,80,80,.1);color:#ff8080;box-shadow:0 0 30px rgba(255,80,80,.15)}
+.qopt.sel::before{opacity:1}
+.qe{font-size:1.5rem}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:1.6rem}
+.q-cnt{font-family:'Space Mono',monospace;font-size:.72rem;color:rgba(255,249,241,.28)}
+.btn-back{background:transparent;border:1px solid rgba(255,255,255,.1);color:rgba(255,249,241,.45);padding:.5rem 1.25rem;border-radius:100px;font-size:.78rem;cursor:none;font-family:'Bricolage Grotesque',sans-serif;transition:all .25s}
+.btn-back:hover{border-color:rgba(255,255,255,.3);color:var(--cream)}
+
+/* Result */
+.q-result{text-align:center;animation:fadeUp .6s ease}
+.res-aura{width:220px;height:220px;border-radius:50%;margin:0 auto 2rem;background:conic-gradient(var(--orange),var(--pink),var(--purple),var(--lime),var(--orange));animation:auraR 3s linear infinite;display:flex;align-items:center;justify-content:center;box-shadow:0 0 110px rgba(255,122,0,.3),0 0 220px rgba(255,79,163,.12)}
+@keyframes auraR{to{transform:rotate(360deg)}}
+.res-inner{width:196px;height:196px;border-radius:50%;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem}
+.res-score{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--lime);line-height:1}
+.res-slbl{font-size:.6rem;letter-spacing:.22em;color:rgba(255,249,241,.35);text-transform:uppercase}
+.res-hl{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4.5vw,3.5rem);background:linear-gradient(135deg,var(--orange),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:.5rem 0}
+.res-badge{display:inline-block;background:rgba(255,122,0,.14);border:1px solid rgba(255,122,0,.35);color:var(--gold);padding:.5rem 1.75rem;border-radius:100px;font-weight:700;font-size:.9rem;margin:.7rem 0}
+.res-aff{font-style:italic;color:rgba(255,249,241,.55);font-size:.92rem;max-width:360px;margin:.5rem auto 1.5rem;line-height:1.6}
+.res-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;text-align:left}
+.rc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:1rem;padding:1.25rem}
+.rc-lbl{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,249,241,.3);margin-bottom:.4rem}
+.rc-val{font-weight:700;color:var(--cream);font-size:.92rem}
+.res-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.75rem}
+
+/* ── FLAVORS ── */
+#flavors{background:linear-gradient(160deg,#06101e 0%,#0a1c38 18%,#0c2448 35%,#091830 60%,#06101e 100%);padding:0 0 8rem;position:relative}
+/* Flavors ocean ambience blobs */
+#flavors::before{content:'';position:absolute;top:-100px;left:-150px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(0,120,255,.13),transparent 68%);pointer-events:none;z-index:0;animation:fBlobDrift 12s ease-in-out infinite}
+#flavors::after{content:'';position:absolute;bottom:-80px;right:-120px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,220,220,.09),transparent 68%);pointer-events:none;z-index:0;animation:fBlobDrift 15s ease-in-out infinite reverse}
+@keyframes fBlobDrift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-50px) scale(1.1)}}
+/* Flavors animated grid */
+.flavors-bg-grid{position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(0,150,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,150,255,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 90% 80% at 50% 50%,black 20%,transparent 100%)}
+/* Flavors shimmer horizontal lines */
+.flavors-hlines{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fhline{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,180,255,.18),rgba(0,220,220,.22),rgba(0,180,255,.18),transparent);animation:fhlineScroll 8s linear infinite}
+@keyframes fhlineScroll{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+/* Floating ocean particles in flavors */
+.flav-ocean-particle{position:absolute;border-radius:50%;pointer-events:none;z-index:1;animation:oceanParticle linear infinite}
+@keyframes oceanParticle{0%{transform:translateY(0) scale(1);opacity:.6}50%{transform:translateY(-80px) scale(.7);opacity:.3}100%{transform:translateY(-160px) scale(.3);opacity:0}}
+/* Floating diamond decos in flavors */
+.flav-diamond{position:absolute;pointer-events:none;z-index:1;animation:diamondFloat ease-in-out infinite}
+@keyframes diamondFloat{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(-16px)}}
+.flavors-header{padding:8rem 5% 4rem;text-align:center;position:relative;z-index:2}
+/* Override s-title in flavors to use electric blue */
+#flavors .s-title{background:linear-gradient(135deg,#c0e8ff 0%,#7dd3fc 30%,#22d3ee 60%,#0ea5e9 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+#flavors .s-tag.orange{background:rgba(0,180,255,.1);border:1px solid rgba(0,180,255,.3);color:#7dd3fc}
+/* Ocean wave divider inside flavors */
+.flav-wave-top{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#0ea5e9,#22d3ee,#7dd3fc,#22d3ee,#0ea5e9,transparent);animation:waveGlow 3s ease-in-out infinite alternate;z-index:3}
+@keyframes waveGlow{from{opacity:.5;box-shadow:0 0 10px rgba(0,180,255,.3)}to{opacity:1;box-shadow:0 0 30px rgba(0,220,255,.7)}}
+.flavors-grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:1400px;margin:0 auto;gap:3px;padding:0 2%;border-radius:2rem;overflow:hidden;position:relative;z-index:2}
+.flav-card{position:relative;aspect-ratio:.88;overflow:hidden;cursor:none;display:flex;flex-direction:column;justify-content:flex-end;padding:2.5rem;transition:transform .3s}
+.flav-bg{position:absolute;inset:0;transition:transform .55s cubic-bezier(.25,.46,.45,.94)}
+.flav-card:hover .flav-bg{transform:scale(1.06)}
+.flav-grad{position:absolute;inset:0;z-index:1;pointer-events:none}
+.flav-card.lime .flav-bg{background:linear-gradient(145deg,#030e00,#082000,#0b3200,#041400)}
+.flav-card.berry .flav-bg{background:linear-gradient(145deg,#060018,#100036,#180050,#08001e)}
+.flav-card.citrus .flav-bg{background:linear-gradient(145deg,#110300,#280900,#3c1100,#180500)}
+.flav-card.mango .flav-bg{background:linear-gradient(145deg,#110700,#271500,#3a2100,#1a0d00)}
+.flav-card.lime .flav-grad{background:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,50,0,.28) 50%,transparent)}
+.flav-card.berry .flav-grad{background:linear-gradient(to top,rgba(0,0,0,.9),rgba(28,0,80,.28) 50%,transparent)}
+.flav-card.citrus .flav-grad{background:linear-gradient(to top,rgba(0,0,0,.9),rgba(60,20,0,.28) 50%,transparent)}
+.flav-card.mango .flav-grad{background:linear-gradient(to top,rgba(0,0,0,.9),rgba(50,28,0,.28) 50%,transparent)}
+.flav-card.lime::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--lime);z-index:10}
+.flav-card.berry::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:#b899ff;z-index:10}
+.flav-card.citrus::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);z-index:10}
+.flav-card.mango::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gold);z-index:10}
+
+/* Flavor glow hover */
+.flav-card.lime:hover{box-shadow:0 0 80px rgba(199,255,61,.2) inset}
+.flav-card.berry:hover{box-shadow:0 0 80px rgba(168,85,247,.2) inset}
+.flav-card.citrus:hover{box-shadow:0 0 80px rgba(255,122,0,.2) inset}
+.flav-card.mango:hover{box-shadow:0 0 80px rgba(255,176,0,.2) inset}
+
+/* Animated dot pattern per card */
+.flav-dots{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.4;transition:opacity .4s}
+.flav-card:hover .flav-dots{opacity:.7}
+.flav-card.lime .flav-dots{background-image:radial-gradient(rgba(199,255,61,.25) 1px,transparent 1px);background-size:28px 28px}
+.flav-card.berry .flav-dots{background-image:radial-gradient(rgba(168,85,247,.25) 1px,transparent 1px);background-size:28px 28px}
+.flav-card.citrus .flav-dots{background-image:radial-gradient(rgba(255,122,0,.25) 1px,transparent 1px);background-size:28px 28px}
+.flav-card.mango .flav-dots{background-image:radial-gradient(rgba(255,176,0,.25) 1px,transparent 1px);background-size:28px 28px}
+
+.flav-can{position:absolute;top:46%;left:50%;transform:translate(-50%,-50%);width:34%;transition:transform .45s ease}
+.flav-card:hover .flav-can{transform:translate(-50%,-60%) scale(1.1) rotate(4deg)}
+.flav-can-body{width:100%;aspect-ratio:1/2.1;border-radius:38% 38% 32% 32%/48% 48% 38% 38%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;position:relative;overflow:hidden;border:2px dashed rgba(255,255,255,.18)}
+.flav-card.lime .flav-can-body{background:linear-gradient(165deg,#8fff70,#c7ff3d,#6ddb00,#1a6600);box-shadow:0 24px 70px rgba(199,255,61,.38)}
+.flav-card.berry .flav-can-body{background:linear-gradient(165deg,#d8b4fe,#a855f7,#7c3aed,#3b0a90);box-shadow:0 24px 70px rgba(106,50,255,.42)}
+.flav-card.citrus .flav-can-body{background:linear-gradient(165deg,#ffe080,#ff9500,#ff6800,#9a3000);box-shadow:0 24px 70px rgba(255,122,0,.42)}
+.flav-card.mango .flav-can-body{background:linear-gradient(165deg,#fff280,#ffb000,#ff8500,#a04000);box-shadow:0 24px 70px rgba(255,176,0,.42)}
+.flav-can-body::after{content:'';position:absolute;top:0;left:-120%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);animation:canShine 3.5s ease-in-out infinite}
+@keyframes canShine{0%,100%{left:-120%}45%{left:180%}}
+.flav-can-emoji{font-size:clamp(1.4rem,2.8vw,2.6rem);filter:drop-shadow(0 4px 10px rgba(0,0,0,.5));position:relative;z-index:1}
+.flav-can-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(.55rem,1.1vw,.9rem);letter-spacing:.12em;position:relative;z-index:1}
+.flav-card.lime .flav-can-name,.flav-card.citrus .flav-can-name,.flav-card.mango .flav-can-name{color:rgba(0,0,0,.72)}
+.flav-card.berry .flav-can-name{color:rgba(255,255,255,.82)}
+
+/* Particles */
+.flav-particles{position:absolute;inset:0;pointer-events:none;z-index:2}
+.fp{position:absolute;border-radius:50%;animation:fpUp linear infinite}
+@keyframes fpUp{from{transform:translateY(108%) rotate(0deg);opacity:.7}to{transform:translateY(-8%) rotate(720deg);opacity:0}}
+
+.flav-content{position:relative;z-index:3}
+.flav-tag{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;font-weight:700;opacity:.65;margin-bottom:.4rem}
+.flav-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,3.2vw,3rem);letter-spacing:.04em;line-height:1;margin-bottom:.45rem}
+.flav-card.lime .flav-tag,.flav-card.lime .flav-name{color:var(--lime)}
+.flav-card.berry .flav-tag,.flav-card.berry .flav-name{color:#b899ff}
+.flav-card.citrus .flav-tag,.flav-card.citrus .flav-name{color:var(--orange)}
+.flav-card.mango .flav-tag,.flav-card.mango .flav-name{color:var(--gold)}
+.flav-mood{font-size:.78rem;color:rgba(255,249,241,.5);margin-bottom:1.2rem;font-style:italic}
+.flav-btn{display:inline-flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);padding:.5rem 1.25rem;border-radius:100px;color:var(--cream);transition:all .3s;cursor:none}
+.flav-btn:hover{background:rgba(255,255,255,.16)}
+
+/* ── MUSIC ── */
+#music{padding:9rem 5%;background:linear-gradient(160deg,#1e1600,#2e2000 30%,#382600 60%,#241800);position:relative;overflow:hidden}
+.music-stars{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.mstar{position:absolute;border-radius:50%;background:#ffcc00;animation:twinkle ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.12;transform:scale(.7)}50%{opacity:.85;transform:scale(1.4)}}
+
+.music-layout{max-width:1400px;margin:4rem auto 0;display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start;padding:0 5%}
+.pl-list{display:flex;flex-direction:column;gap:.8rem}
+.pl-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:1.25rem;padding:1.1rem 1.4rem;display:flex;align-items:center;gap:1.1rem;transition:all .3s;cursor:none;position:relative;overflow:hidden}
+.pl-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,rgba(255,176,0,.16),transparent);transition:width .4s}
+.pl-item:hover{border-color:rgba(255,176,0,.32);transform:translateX(8px)}
+.pl-item:hover::before{width:100%}
+.pl-icon{width:50px;height:50px;border-radius:.85rem;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.25rem}
+.pl-info{flex:1;position:relative;z-index:1}
+.pl-name{font-weight:700;font-size:.92rem;color:var(--cream);margin-bottom:.12rem}
+.pl-meta{font-size:.72rem;color:rgba(255,249,241,.38);font-family:'Space Mono',monospace}
+.pl-play{width:36px;height:36px;border-radius:50%;border:1.5px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,249,241,.45);flex-shrink:0;position:relative;z-index:1;transition:all .3s;font-size:.85rem}
+.pl-item:hover .pl-play{background:var(--lime);border-color:var(--lime);color:var(--black)}
+
+/* Waveform canvas */
+#vizCanvas{width:100%;height:56px;margin-top:1.75rem;border-radius:.75rem;overflow:hidden;display:block}
+
+.music-right{display:flex;flex-direction:column;gap:2rem}
+.music-big{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,5vw,5.2rem);line-height:.9;letter-spacing:.02em;background:linear-gradient(135deg,var(--cream),#b899ff,var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 50px rgba(106,50,255,.3))}
+.sp-box{background:rgba(106,50,255,.07);border:2px dashed rgba(106,50,255,.2);border-radius:1.5rem;padding:2.5rem;text-align:center;transition:all .3s;cursor:none}
+.sp-box:hover{background:rgba(106,50,255,.12);border-color:rgba(106,50,255,.4)}
+.sp-icon{width:62px;height:62px;border-radius:50%;background:rgba(106,50,255,.14);margin:0 auto .9rem;display:flex;align-items:center;justify-content:center;font-size:1.9rem}
+.sp-title{font-weight:800;font-size:1rem;color:var(--cream);margin-bottom:.35rem}
+.sp-sub{color:rgba(255,249,241,.42);font-size:.83rem;line-height:1.55;margin-bottom:1.2rem}
+.tiktok-box{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:1.5rem;padding:1.65rem;position:relative;overflow:hidden}
+.tiktok-box::before{content:'#100PercentThatSip';position:absolute;right:-20px;top:-16px;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.1em;color:rgba(255,79,163,.07);transform:rotate(15deg);white-space:nowrap;pointer-events:none}
+.tk-lbl{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:.45rem}
+.tk-tag{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.06em;color:var(--cream);margin-bottom:.35rem}
+.tk-sub{color:rgba(255,249,241,.48);font-size:.83rem;margin-bottom:1.1rem}
+
+/* ── WELLNESS ── */
+#wellness{padding:9rem 5%;background:linear-gradient(160deg,#0a1a0a,#122012 35%,#0e1c0e 65%,#081408);position:relative}
+#wellness::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:900px;height:550px;background:radial-gradient(ellipse,rgba(74,222,128,.05),transparent 70%);pointer-events:none}
+.well-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.65rem;max-width:1400px;margin:4rem auto 0}
+.well-card{background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.07);border-radius:1.75rem;padding:2rem;position:relative;overflow:hidden;transition:all .38s;cursor:none}
+.well-card:hover{transform:translateY(-9px)}
+.wglow{position:absolute;inset:0;border-radius:1.75rem;opacity:0;transition:opacity .38s;pointer-events:none}
+.well-card:hover .wglow{opacity:1}
+.well-card:nth-child(1):hover{border-color:rgba(199,255,61,.24);box-shadow:0 28px 70px rgba(199,255,61,.09)}.well-card:nth-child(1) .wglow{background:radial-gradient(circle at 30% 50%,rgba(199,255,61,.07),transparent 65%)}
+.well-card:nth-child(2):hover{border-color:rgba(255,122,0,.24);box-shadow:0 28px 70px rgba(255,122,0,.09)}.well-card:nth-child(2) .wglow{background:radial-gradient(circle at 30% 50%,rgba(255,122,0,.07),transparent 65%)}
+.well-card:nth-child(3):hover{border-color:rgba(255,79,163,.24);box-shadow:0 28px 70px rgba(255,79,163,.09)}.well-card:nth-child(3) .wglow{background:radial-gradient(circle at 30% 50%,rgba(255,79,163,.07),transparent 65%)}
+.well-card:nth-child(4):hover{border-color:rgba(106,50,255,.24);box-shadow:0 28px 70px rgba(106,50,255,.09)}.well-card:nth-child(4) .wglow{background:radial-gradient(circle at 30% 50%,rgba(106,50,255,.07),transparent 65%)}
+.well-card:nth-child(5):hover{border-color:rgba(255,92,92,.24);box-shadow:0 28px 70px rgba(255,92,92,.09)}.well-card:nth-child(5) .wglow{background:radial-gradient(circle at 30% 50%,rgba(255,92,92,.07),transparent 65%)}
+.well-card:nth-child(6):hover{border-color:rgba(255,176,0,.24);box-shadow:0 28px 70px rgba(255,176,0,.09)}.well-card:nth-child(6) .wglow{background:radial-gradient(circle at 30% 50%,rgba(255,176,0,.07),transparent 65%)}
+.well-icon{width:54px;height:54px;border-radius:.9rem;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:1.2rem;position:relative;z-index:1}
+.well-title{font-size:1.05rem;font-weight:800;margin-bottom:.45rem;color:var(--cream);position:relative;z-index:1}
+.well-desc{font-size:.86rem;color:rgba(255,249,241,.48);line-height:1.65;position:relative;z-index:1}
+.well-badge{display:inline-block;margin-top:.7rem;font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:.22rem .7rem;border-radius:100px;position:relative;z-index:1}
+
+.well-extras{max-width:1400px;margin:2.5rem auto 0;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.ex-panel{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);border-radius:1.75rem;padding:2.1rem;position:relative;overflow:hidden}
+.ex-lbl{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.7rem}
+.ex-title{font-family:'Bebas Neue',sans-serif;font-size:1.55rem;letter-spacing:.06em;color:var(--cream);margin-bottom:1.4rem}
+.sbr{margin-bottom:1.05rem}
+.sbr-top{display:flex;justify-content:space-between;margin-bottom:.32rem}
+.sbr-name{font-size:.83rem;color:var(--cream)}
+.sbr-val{font-size:.83rem;font-weight:700}
+.sbr-track{height:9px;background:rgba(255,255,255,.06);border-radius:5px;overflow:hidden}
+.sbr-fill{height:100%;border-radius:5px;transition:width 1.2s ease}
+.ingr-row{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.ingr-row:last-child{border-bottom:none}
+.ingr-name{font-size:.88rem;color:var(--cream)}
+.ingr-chk{font-size:.72rem;font-weight:700;padding:.18rem .68rem;border-radius:100px}
+
+/* ── SUSTAINABILITY ── */
+#sustainability{padding:9rem 5%;background:linear-gradient(145deg,#12082a,#1c0c40,#240e50,#180a38,#100826);position:relative;overflow:hidden}
+#sustainability::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#a78bfa,#c4b5fd,#a78bfa,transparent);z-index:3;pointer-events:none}
+.sustain-wrap{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.sustain-big{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,7.5vw,7rem);line-height:.88;letter-spacing:.02em;margin-bottom:2rem}
+.sg1{color:#c4b5fd;text-shadow:0 0 60px rgba(167,139,250,.45)}
+.sg2{color:var(--cream)}
+.sustain-desc{color:rgba(255,249,241,.55);font-size:1rem;line-height:1.72;margin-bottom:2.5rem;max-width:460px}
+.stats-row{display:flex;gap:2.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.stat-b{display:flex;flex-direction:column;gap:.2rem;position:relative}
+.stat-b::after{content:'';position:absolute;bottom:-7px;left:0;width:28px;height:2px;background:#a78bfa}
+.stat-n{font-family:'Bebas Neue',sans-serif;font-size:3.2rem;letter-spacing:.04em;color:#c4b5fd;line-height:1;text-shadow:0 0 40px rgba(167,139,250,.5)}
+.stat-l{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,249,241,.42)}
+.scan-box{background:rgba(106,50,255,.07);border:1.5px solid rgba(106,50,255,.25);border-radius:2rem;padding:3rem;text-align:center;position:relative;overflow:hidden}
+.scan-box::before{content:'';position:absolute;inset:-50%;background:radial-gradient(circle,rgba(106,50,255,.06),transparent 60%);animation:scanPulse 4s ease-in-out infinite}
+@keyframes scanPulse{0%,100%{transform:scale(.8);opacity:.5}50%{transform:scale(1.1);opacity:1}}
+.scan-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:.15em;color:#c4b5fd;margin-bottom:.7rem;position:relative;z-index:1}
+.scan-sub{color:rgba(255,249,241,.5);margin-bottom:2rem;font-size:.9rem;position:relative;z-index:1}
+.scan-qr{width:108px;height:108px;border:2px dashed rgba(167,139,250,.45);border-radius:1.2rem;margin:0 auto 2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.28rem;color:#c4b5fd;font-size:.58rem;letter-spacing:.07em;text-transform:uppercase;text-align:center;position:relative;z-index:1;background:rgba(106,50,255,.04)}
+.reward-tags{display:flex;gap:.45rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1}
+.rtag{background:rgba(106,50,255,.1);border:1px solid rgba(106,50,255,.22);color:#c4b5fd;padding:.28rem .85rem;border-radius:100px;font-size:.72rem;font-weight:700;transition:all .3s;cursor:none}
+.rtag:hover{background:var(--purple);color:var(--white)}
+
+/* ── COMMUNITY ── */
+#community{padding:9rem 5%;background:linear-gradient(160deg,#280818,#3a0a24 30%,#2e0a1c 65%,#1e0612)}
+.comm-feed{max-width:1400px;margin:4rem auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.comm-post{border-radius:1.4rem;overflow:hidden;aspect-ratio:1;cursor:none;transition:all .38s;position:relative;border:1px solid rgba(255,255,255,.05)}
+.comm-post:hover{transform:scale(1.05);box-shadow:0 18px 55px rgba(0,0,0,.55)}
+.post-in{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;position:relative}
+.post-emoji{font-size:2.8rem;animation:emojiFloat 5s ease-in-out infinite}
+@keyframes emojiFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-9px) rotate(6deg)}}
+.post-tag{font-size:.68rem;letter-spacing:.1em;font-weight:700;opacity:.68}
+.post-overlay{position:absolute;inset:0;background:rgba(0,0,0,.68);backdrop-filter:blur(5px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;opacity:0;transition:opacity .3s}
+.comm-post:hover .post-overlay{opacity:1}
+.pol-tag{font-size:.72rem;letter-spacing:.12em;font-weight:700}
+.pol-sub{font-size:.68rem;color:rgba(255,249,241,.48)}
+.comm-post:nth-child(1){background:linear-gradient(135deg,#1a0e00,#3a2800)}
+.comm-post:nth-child(2){background:linear-gradient(135deg,#0a0020,#1e0050)}
+.comm-post:nth-child(3){background:linear-gradient(135deg,#041500,#0a2e00)}
+.comm-post:nth-child(4){background:linear-gradient(135deg,#1a0800,#2e1400)}
+.comm-post:nth-child(5){background:linear-gradient(135deg,#12001a,#2e003e)}
+.comm-post:nth-child(6){background:linear-gradient(135deg,#051800,#0d2e00)}
+.comm-post:nth-child(7){background:linear-gradient(135deg,#06001a,#180040)}
+.comm-post:nth-child(8){background:linear-gradient(135deg,#1a1000,#301800)}
+
+.hashtag-cloud{max-width:1400px;margin:2.5rem auto 0;display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
+.hashtag{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);color:var(--cream);padding:.48rem 1.25rem;border-radius:100px;font-size:.83rem;font-weight:700;letter-spacing:.04em;cursor:none;transition:all .3s}
+.hashtag:hover{background:rgba(255,79,163,.14);border-color:rgba(255,79,163,.38);color:var(--pink);transform:scale(1.07)}
+
+/* ── STORE ── */
+#store{padding:9rem 5%;background:linear-gradient(160deg,#221008,#321800 30%,#3a1e00 60%,#281200)}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.65rem;max-width:1400px;margin:4rem auto 0}
+.prod-card{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:1.75rem;overflow:hidden;cursor:none;transition:all .38s;position:relative}
+.prod-card:hover{transform:translateY(-11px);border-color:rgba(255,122,0,.32);box-shadow:0 30px 75px rgba(255,122,0,.11)}
+.prod-img{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;position:relative;overflow:hidden}
+.prod-img::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,122,0,.09),rgba(255,79,163,.07))}
+.prod-card:nth-child(2) .prod-img::before{background:linear-gradient(135deg,rgba(106,50,255,.09),rgba(255,79,163,.07))}
+.prod-card:nth-child(3) .prod-img::before{background:linear-gradient(135deg,rgba(255,176,0,.09),rgba(255,122,0,.07))}
+.prod-card:nth-child(4) .prod-img::before{background:linear-gradient(135deg,rgba(199,255,61,.07),rgba(255,122,0,.07))}
+.prod-card:nth-child(5) .prod-img::before{background:linear-gradient(135deg,rgba(0,229,255,.07),rgba(106,50,255,.07))}
+.prod-shine{position:absolute;top:0;left:-120%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);animation:prodShine 4.5s ease-in-out infinite}
+@keyframes prodShine{0%,100%{left:-120%}50%{left:180%}}
+.prod-emoji{font-size:3.5rem;position:relative;z-index:1;filter:drop-shadow(0 4px 14px rgba(0,0,0,.4));transition:transform .3s}
+.prod-card:hover .prod-emoji{transform:scale(1.15) rotate(-5deg)}
+.prod-ph{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,249,241,.18);position:relative;z-index:1}
+.prod-info{padding:1.35rem 1.45rem 0}
+.prod-cat{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:.28rem}
+.prod-name{font-size:1.02rem;font-weight:800;color:var(--cream);margin-bottom:.22rem;line-height:1.25}
+.prod-price{font-size:.85rem;color:rgba(255,249,241,.42);font-family:'Space Mono',monospace}
+.prod-add{display:block;margin:1rem 1.45rem 1.45rem;width:calc(100% - 2.9rem);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);color:var(--cream);padding:.72rem;border-radius:.85rem;font-family:'Bricolage Grotesque',sans-serif;font-size:.83rem;font-weight:700;cursor:none;transition:all .3s;letter-spacing:.04em}
+.prod-add:hover{background:linear-gradient(135deg,var(--orange),#ff4500);border-color:transparent;color:var(--black);box-shadow:0 6px 28px rgba(255,122,0,.4)}
+.prod-soon{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:200px;gap:.9rem;padding:2rem}
+.prod-soon-title{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:.08em;background:linear-gradient(135deg,var(--orange),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-align:center}
+.email-row{display:flex;width:100%;max-width:270px;border:1px solid rgba(255,255,255,.11);border-radius:100px;overflow:hidden}
+.email-row input{flex:1;background:transparent;border:none;padding:.58rem .9rem;color:var(--cream);font-family:'Bricolage Grotesque',sans-serif;font-size:.78rem;outline:none}
+.email-row input::placeholder{color:rgba(255,249,241,.28)}
+.email-row button{background:var(--orange);border:none;padding:.58rem 1.1rem;color:var(--black);font-weight:800;font-size:.72rem;cursor:none;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:.06em}
+
+/* ── FOOTER ── */
+footer{background:#030303;border-top:1px solid rgba(255,255,255,.04);padding:6rem 5% 3rem;position:relative;overflow:hidden}
+.foot-ticker{position:absolute;top:0;left:0;right:0;overflow:hidden;white-space:nowrap;padding:.55rem 0;background:rgba(255,122,0,.05);border-bottom:1px solid rgba(255,122,0,.08)}
+.foot-ticker-inner{display:inline-flex;animation:tick 36s linear infinite}
+.foot-ticker-inner span{font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,122,0,.65);padding:0 2.5rem}
+/* Footer bubbles */
+.foot-bubble{position:absolute;border-radius:50%;background:rgba(255,122,0,.05);border:1px solid rgba(255,122,0,.1);animation:footBubble linear infinite;pointer-events:none}
+@keyframes footBubble{from{transform:translateY(0) scale(1);opacity:.6}to{transform:translateY(-300px) scale(.4);opacity:0}}
+
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;max-width:1400px;margin:4.5rem auto 3rem}
+.foot-brand{display:flex;flex-direction:column;gap:1.4rem}
+.foot-pill{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,rgba(255,122,0,.14),rgba(255,79,163,.08));border:1px solid rgba(255,122,0,.22);border-radius:100px;padding:.48rem 1.2rem;width:fit-content}
+.fp-o{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;letter-spacing:.12em;color:var(--orange)}
+.fp-d{color:rgba(255,249,241,.18);margin:0 .3rem}
+.fp-p{font-family:'Space Mono',monospace;font-size:.72rem;font-style:italic;color:var(--pink)}
+.foot-desc{color:rgba(255,249,241,.38);font-size:.85rem;line-height:1.7;max-width:280px}
+.foot-social{display:flex;gap:.6rem}
+.soc-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center;color:rgba(255,249,241,.35);font-size:.7rem;font-weight:700;transition:all .3s;cursor:none;font-family:'Space Mono',monospace;text-decoration:none}
+.soc-btn:hover{background:var(--orange);border-color:var(--orange);color:var(--black);transform:scale(1.18)}
+.foot-col h4{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,249,241,.28);margin-bottom:1.2rem;font-weight:700}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.foot-col a{color:rgba(255,249,241,.5);text-decoration:none;font-size:.85rem;transition:color .3s;cursor:none}
+.foot-col a:hover{color:var(--cream)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;flex-wrap:wrap;gap:1rem}
+.foot-bottom p{color:rgba(255,249,241,.22);font-size:.75rem;font-family:'Space Mono',monospace}
+.foot-links{display:flex;gap:1.4rem}
+.foot-links a{color:rgba(255,249,241,.22);text-decoration:none;font-size:.75rem;transition:color .3s;cursor:none}
+.foot-links a:hover{color:rgba(255,249,241,.65)}
+
+/* ── UTILS ── */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.sd1{transition-delay:.1s}.sd2{transition-delay:.2s}.sd3{transition-delay:.3s}.sd4{transition-delay:.4s}.sd5{transition-delay:.5s}.sd6{transition-delay:.6s}
+
+/* Ripple */
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.18);transform:scale(0);animation:rippleAnim .7s ease-out forwards;pointer-events:none;z-index:10}
+@keyframes rippleAnim{to{transform:scale(4);opacity:0}}
+
+/* Floating bubble particle global */
+.gbl-bubble{position:fixed;border-radius:50%;pointer-events:none;z-index:9995;animation:gblRise linear forwards}
+@keyframes gblRise{0%{transform:translateY(0) scale(1);opacity:.6}100%{transform:translateY(-100vh) scale(.1);opacity:0}}
+
+/* Section dividers */
+.divider-wave{width:100%;overflow:hidden;line-height:0;position:relative;z-index:2}
+.divider-wave svg{display:block;width:100%}
+
+/* ── SPARKLE DIVIDER ── */
+.sparkle-div{display:flex;align-items:center;gap:1rem;padding:1.5rem 5%;max-width:1400px;margin:0 auto;position:relative;z-index:2}
+.sparkle-div::before,.sparkle-div::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent)}
+.sparkle-div-inner{display:flex;gap:.6rem;align-items:center}
+.sp-star{animation:spStarSpin ease-in-out infinite alternate;font-size:.9rem}
+@keyframes spStarSpin{from{transform:scale(.7) rotate(0deg);opacity:.4}to{transform:scale(1.2) rotate(180deg);opacity:1}}
+
+/* ── NEON CORNER ACCENT (hero, quiz, community) ── */
+.neon-corner{position:absolute;pointer-events:none;z-index:3}
+.neon-corner::before,.neon-corner::after{content:'';position:absolute;background:var(--lime);border-radius:2px}
+.nc-tl{top:2rem;left:2rem}.nc-tl::before{width:40px;height:2px;top:0;left:0}.nc-tl::after{width:2px;height:40px;top:0;left:0}
+.nc-br{bottom:2rem;right:2rem}.nc-br::before{width:40px;height:2px;bottom:0;right:0}.nc-br::after{width:2px;height:40px;bottom:0;right:0}
+.nc-pink::before,.nc-pink::after{background:var(--pink)}
+.nc-orange::before,.nc-orange::after{background:var(--orange)}
+.nc-blue::before,.nc-blue::after{background:#22d3ee}
+
+/* ── PULSE RINGS (hero, sustainability) ── */
+.pulse-ring-deco{position:absolute;border-radius:50%;border:1px solid;pointer-events:none;animation:prDeco ease-in-out infinite}
+@keyframes prDeco{0%,100%{transform:scale(1);opacity:.18}50%{transform:scale(1.15);opacity:.38}}
+
+/* ── ZIGZAG RULE ── */
+.zzrule{position:relative;height:24px;overflow:hidden;pointer-events:none}
+.zzrule svg{width:100%;height:100%}
+
+/* ── HERO extra floating decos ── */
+.hero-hex{position:absolute;pointer-events:none;animation:hexFloat ease-in-out infinite;opacity:.15}
+@keyframes hexFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(60deg)}}
+.hero-cross{position:absolute;pointer-events:none;font-size:1rem;animation:crossPop ease-in-out infinite alternate;opacity:.35}
+@keyframes crossPop{from{transform:scale(.7) rotate(0deg)}to{transform:scale(1.3) rotate(90deg)}}
+
+/* ── COMMUNITY EXTRA ── */
+#community{padding:9rem 5%;background:linear-gradient(160deg,#280818,#3a0a24 30%,#2e0a1c 65%,#1e0612);position:relative;overflow:hidden}
+#community::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--pink),#ff8ed4,var(--pink),transparent);animation:commTopGlow 3s ease-in-out infinite alternate}
+@keyframes commTopGlow{from{opacity:.4}to{opacity:1}}
+
+/* ── STORE EXTRA ── */
+#store{padding:9rem 5%;background:linear-gradient(160deg,#221008,#321800 30%,#3a1e00 60%,#281200);position:relative;overflow:hidden}
+#store::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--orange),#ffaa44,var(--orange),transparent);z-index:3}
+.store-grid-bg{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,122,0,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,122,0,.04) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black,transparent)}
+
+/* ── MUSIC EXTRA ── */
+#music::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),#ffe066,var(--gold),transparent);z-index:3;pointer-events:none}
+
+/* ── WELLNESS TOP RULE ── */
+#wellness{position:relative}
+#wellness::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#4ade80,#86efac,#4ade80,transparent)}
+
+/* ── SECTION END BOTTOM RULE ── */
+
+/* ── TOUCH DEVICE: restore cursor, hide custom cursor ── */
+@media (pointer: coarse) {
+  body { cursor: auto !important; }
+  #cur, #cur-ring { display: none !important; }
+  button, a, .flav-card, .comm-post, .pl-item, .well-card,
+  .prod-card, .lyric-item, .hashtag, .rtag, .qopt,
+  .nav-cta, .btn-primary, .btn-outline, .btn-lime,
+  .btn-back, .flav-btn, .prod-add, .email-row button,
+  .soc-btn, .foot-col a, .foot-links a { cursor: pointer !important; }
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .pre-fill { transition: none !important; }
+}
+
+/* ── FOCUS VISIBLE (accessibility) ── */
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── PRINT ── */
+@media print {
+  #preloader, #cur, #cur-ring, nav { display: none !important; }
+  body { background: white !important; color: black !important; }
+}
+
+@media(max-width:1100px){
+  .lizzo-wrap,.sustain-wrap,.music-layout{grid-template-columns:1fr}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:2.5rem}
+  .comm-feed{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .well-grid,.prod-grid{grid-template-columns:1fr}
+  .flavors-grid{grid-template-columns:1fr}
+  .quiz-opts{grid-template-columns:1fr}
+  .well-extras{grid-template-columns:1fr}
+  .res-cards{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .comm-feed{grid-template-columns:repeat(2,1fr)}
+  .sustain-wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pre-bg" id="preBg"></div>
+  <div class="pre-inner">
+    <div class="pre-ring-outer">
+      <div class="pre-ring-inner">🧃</div>
+    </div>
+    <div class="pre-title">TROPICANA × LIZZO</div>
+    <div class="pre-sub" id="preSub">SHAKE UP YOUR ENERGY.</div>
+    <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-brand">
+    <div class="nav-pill">Tropicana</div>
+    <span class="nav-x">×</span>
+    <span class="nav-liz">Lizzo</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#flavors">Flavors</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#wellness">Wellness</a></li>
+    <li><a href="#store">Store</a></li>
+  </ul>
+  <button class="nav-cta magnetic" onclick="smoothTo('quiz')">Find My Flavor ✦</button>
+</nav>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="hero-mesh">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="blob b4"></div><div class="blob b5"></div>
+  </div>
+  <div class="hero-grid"></div>
+  <canvas id="heroCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1"></canvas>
+
+  <!-- Decos -->
+  <div class="deco" style="top:12%;left:6%;animation-delay:0s;color:var(--lime);font-size:1.6rem">✦</div>
+  <div class="deco" style="top:22%;right:8%;animation-delay:2s;color:var(--orange);font-size:1.4rem">★</div>
+  <div class="deco" style="bottom:28%;left:9%;animation-delay:4s;color:var(--pink);font-size:1.2rem">◆</div>
+  <div class="deco" style="top:38%;right:5%;animation-delay:1.5s;color:var(--purple);font-size:1rem">✦</div>
+  <div class="deco-ring" style="top:10%;right:15%;border-color:var(--orange);width:80px;height:80px;animation-duration:14s"></div>
+  <div class="deco-ring" style="bottom:16%;left:7%;border-color:var(--pink);width:55px;height:55px;animation-duration:10s;animation-delay:3s"></div>
+
+  <!-- Neon corner accents -->
+  <div class="neon-corner nc-tl"></div>
+  <div class="neon-corner nc-br"></div>
+  <!-- Extra decos -->
+  <div class="hero-cross" style="top:18%;left:38%;animation-duration:4s;animation-delay:0s;color:var(--lime)">✚</div>
+  <div class="hero-cross" style="top:65%;right:12%;animation-duration:5s;animation-delay:1s;color:var(--orange)">✚</div>
+  <div class="hero-cross" style="bottom:20%;left:20%;animation-duration:3.5s;animation-delay:2s;color:var(--pink)">✚</div>
+  <div class="pulse-ring-deco" style="width:200px;height:200px;border-color:rgba(199,255,61,.22);top:20%;right:10%;animation-duration:4s"></div>
+  <div class="pulse-ring-deco" style="width:120px;height:120px;border-color:rgba(255,79,163,.2);bottom:25%;left:15%;animation-duration:6s;animation-delay:2s"></div>
+  <div class="hero-inner" style="padding:0 5%">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="badge-pulse"></div>
+        ✦ Tropicana × Lizzo — Bold New Collab ✦
+      </div>
+      <h1 class="hero-h1">
+        <span class="h1-l1">GOOD AS HELL<span class="h1-sticker">NEW DROP</span></span>
+        <span class="h1-l2">INSIDE & OUT</span>
+      </h1>
+      <p class="hero-sub">Tropicana's boldest sip yet — powered by gut goodness and <strong>Lizzo energy</strong>. Prebiotic. Delicious. Unapologetic. 🧃✨</p>
+      <div class="hero-pills">
+        <span class="hpill lime">🦠 Prebiotic Power</span>
+        <span class="hpill orng">⚡ 4 Bold Flavors</span>
+        <span class="hpill pink">💅 100% That Sip</span>
+        <span class="hpill">🌱 Clean Ingredients</span>
+      </div>
+      <div class="hero-btns">
+        <button class="btn-primary magnetic" onclick="smoothTo('quiz')">✦ Take the Gut Glow Quiz</button>
+        <button class="btn-outline magnetic" onclick="smoothTo('flavors')">Explore Flavors →</button>
+        <button class="btn-lime magnetic" onclick="smoothTo('community')">Join the Movement</button>
+      </div>
+    </div>
+    <!-- RIGHT: 3D Can -->
+    <div class="hero-right">
+      <div class="can-scene" id="canScene">
+        <!-- Orbits -->
+        <div class="can-orbit" style="inset:-45px;animation-duration:8s"></div>
+        <div class="can-orbit" style="inset:-80px;animation-duration:14s;animation-direction:reverse;border-color:rgba(199,255,61,.18)"></div>
+        <!-- Splash rings -->
+        <div class="splash-ring" style="top:60%;left:50%;animation-delay:0s"></div>
+        <div class="splash-ring" style="top:60%;left:50%;animation-delay:1.5s"></div>
+        <!-- Floating fruits -->
+        <div class="float-fruit" style="animation-duration:8s;animation-delay:0s">🍊</div>
+        <div class="float-fruit" style="animation-duration:11s;animation-delay:3s;font-size:1.2rem">🍋</div>
+        <div class="float-fruit" style="animation-duration:9s;animation-delay:6s;font-size:1rem">🫐</div>
+        <!-- 3D Can -->
+        <div class="can-3d" id="can3d">
+          <div class="can-body-3d">
+            <div class="can-top"></div>
+            <div class="can-highlight"></div>
+            <div class="can-highlight2"></div>
+            <div class="can-shadow-line"></div>
+            <div class="can-icon">🍊</div>
+            <div class="can-brand-txt">Tropicana</div>
+            <div class="can-tagline">Good As Hell</div>
+          </div>
+        </div>
+        <!-- Bubbles -->
+        <div id="canBubbles"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-ind" style="z-index:3">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TICKER 1 -->
+<div class="ticker-wrap lime">
+  <div class="ticker-inner">
+    <span>GOOD AS HELL INSIDE &amp; OUT</span><span class="dot">✦</span>
+    <span>100% THAT SIP</span><span class="dot">✦</span>
+    <span>SIP LIKE YOU MEAN IT</span><span class="dot">✦</span>
+    <span>CONFIDENCE STARTS WITHIN</span><span class="dot">✦</span>
+    <span>ABOUT DAMN LIME</span><span class="dot">✦</span>
+    <span>GLOW FROM WITHIN</span><span class="dot">✦</span>
+    <span>GOOD AS HELL INSIDE &amp; OUT</span><span class="dot">✦</span>
+    <span>100% THAT SIP</span><span class="dot">✦</span>
+    <span>SIP LIKE YOU MEAN IT</span><span class="dot">✦</span>
+    <span>CONFIDENCE STARTS WITHIN</span><span class="dot">✦</span>
+    <span>ABOUT DAMN LIME</span><span class="dot">✦</span>
+    <span>GLOW FROM WITHIN</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ════ LIZZO ════ -->
+<section id="lizzo">
+  <!-- Neon corner accents -->
+  <div class="neon-corner nc-tl nc-pink"></div>
+  <div class="neon-corner nc-br nc-pink"></div>
+  <div class="l-orbs"><div class="lorb lorb1"></div><div class="lorb lorb2"></div><div class="lorb lorb3"></div></div>
+  <div class="l-dots"></div>
+  <div class="lizzo-wrap">
+    <div class="reveal">
+      <div class="lizzo-img-box">
+        <div class="liz-badge1">★ The Vibe</div>
+        <div class="liz-badge2">100% THAT SIP</div>
+        <div class="lizzo-icon">🎤</div>
+        <div class="lizzo-img-lbl">Campaign Image</div>
+      </div>
+    </div>
+    <div class="lizzo-right reveal sd2">
+      <div class="lizzo-kicker">✦ The Collab of the Year</div>
+      <h2 class="lizzo-h">100%<br>THAT<br>SIP.</h2>
+      <p class="lizzo-desc">Bold. Unapologetic. Gut-loving. Tropicana and Lizzo united to create a soda that tastes as good as you feel — bursting with prebiotic power and zero apologies.</p>
+      <div class="sw-wrap" id="swWrap"></div>
+      <div class="lyric-stack">
+        <div class="lyric-item"><span class="lyric-n">01</span><span class="lyric-t">Truth Hurts. <em>Bad Soda Does Too.</em></span><span class="lyric-arr">→</span></div>
+        <div class="lyric-item"><span class="lyric-n">02</span><span class="lyric-t">About <em>Damn Lime.</em></span><span class="lyric-arr">→</span></div>
+        <div class="lyric-item"><span class="lyric-n">03</span><span class="lyric-t">Sip Like You <em>Mean It.</em></span><span class="lyric-arr">→</span></div>
+        <div class="lyric-item"><span class="lyric-n">04</span><span class="lyric-t">Confidence <em>Starts Within.</em></span><span class="lyric-arr">→</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER 2 -->
+<div class="ticker-wrap dark">
+  <div class="ticker-inner fast rev neon-text">
+    <span>PREBIOTIC POWER</span><span class="dot">◆</span>
+    <span>REAL FRUIT JUICE</span><span class="dot">◆</span>
+    <span>LOWER SUGAR</span><span class="dot">◆</span>
+    <span>CLEAN INGREDIENTS</span><span class="dot">◆</span>
+    <span>GUT HEALTH</span><span class="dot">◆</span>
+    <span>ETHICALLY SOURCED</span><span class="dot">◆</span>
+    <span>PREBIOTIC POWER</span><span class="dot">◆</span>
+    <span>REAL FRUIT JUICE</span><span class="dot">◆</span>
+    <span>LOWER SUGAR</span><span class="dot">◆</span>
+    <span>CLEAN INGREDIENTS</span><span class="dot">◆</span>
+    <span>GUT HEALTH</span><span class="dot">◆</span>
+    <span>ETHICALLY SOURCED</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- FLAVORS → QUIZ TICKER -->
+<div class="ticker-wrap" style="background:linear-gradient(90deg,#0ea5e9,#22d3ee,#0284c7);padding:.8rem 0">
+  <div class="ticker-inner slow">
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">ABOUT DAMN LIME</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">BERRY GOOD AS HELL</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">TEMPO CITRUS</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">MANGO MOOD</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">ABOUT DAMN LIME</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">BERRY GOOD AS HELL</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">TEMPO CITRUS</span><span style="color:#000814;padding:0 1rem">◆</span>
+    <span style="color:#000814;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.18em;padding:0 1.8rem">MANGO MOOD</span><span style="color:#000814;padding:0 1rem">◆</span>
+  </div>
+</div>
+
+<!-- ════ QUIZ ════ -->
+<section id="quiz">
+  <div class="neon-corner nc-tl"></div>
+  <div class="neon-corner nc-br"></div>
+  <!-- Floating sparkle decos in quiz -->
+  <div class="deco" style="top:8%;left:4%;color:var(--lime);font-size:1rem;animation-delay:0s">✦</div>
+  <div class="deco" style="top:15%;right:5%;color:var(--orange);font-size:.8rem;animation-delay:1.5s">★</div>
+  <div class="deco" style="bottom:12%;left:7%;color:var(--pink);font-size:.9rem;animation-delay:3s">◆</div>
+  <div class="deco" style="bottom:20%;right:6%;color:var(--lime);font-size:.7rem;animation-delay:0.8s">✦</div>
+  <div class="reveal" style="text-align:center">
+    <div class="s-tag lime">✦ Interactive Experience ✦</div>
+    <h2 class="s-title lim">GUT GLOW QUIZ</h2>
+    <p class="s-sub" style="margin:.7rem auto 0">5 quick questions. Discover your aura, flavor, and Lizzo-powered affirmation.</p>
+  </div>
+  <div class="quiz-shell reveal sd2">
+    <div class="quiz-card">
+      <div class="quiz-prog" id="qProg">
+        <div class="ps active" id="ps0"></div>
+        <div class="ps" id="ps1"></div>
+        <div class="ps" id="ps2"></div>
+        <div class="ps" id="ps3"></div>
+        <div class="ps" id="ps4"></div>
+      </div>
+      <div id="qBody"></div>
+      <div id="qResult" style="display:none">
+        <div class="res-aura"><div class="res-inner"><div class="res-score" id="rScore">98</div><div class="res-slbl">Gut Glow Score</div></div></div>
+        <div class="res-hl" id="rHl">You're 100% That Sip.</div>
+        <div class="res-badge" id="rFlavor">✦ About Damn Lime</div>
+        <div class="res-aff" id="rAff">"Your aura is electric. Keep glowing from the inside out."</div>
+        <div class="res-cards">
+          <div class="rc"><div class="rc-lbl">Your Playlist</div><div class="rc-val" id="rPl">Main Character Energy 🎵</div></div>
+          <div class="rc"><div class="rc-lbl">Wellness Tip</div><div class="rc-val" id="rTip">Hydrate first. Glow second.</div></div>
+        </div>
+        <div class="res-btns">
+          <button class="btn-primary magnetic" onclick="retakeQuiz()">✦ Retake Quiz</button>
+          <button class="btn-lime magnetic" onclick="smoothTo('flavors')">Shop My Flavor →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FLAVORS ════ -->
+<section id="flavors">
+  <!-- Ocean atmosphere decos -->
+  <div class="flav-wave-top"></div>
+  <div class="flavors-bg-grid"></div>
+  <div class="flavors-hlines">
+    <div class="fhline" style="top:22%;animation-delay:0s;animation-duration:9s"></div>
+    <div class="fhline" style="top:55%;animation-delay:3s;animation-duration:12s"></div>
+    <div class="fhline" style="top:78%;animation-delay:6s;animation-duration:7s"></div>
+  </div>
+  <!-- Floating diamonds -->
+  <div class="flav-diamond" style="width:14px;height:14px;background:rgba(0,180,255,.25);top:12%;left:4%;animation-duration:7s;animation-delay:0s"></div>
+  <div class="flav-diamond" style="width:10px;height:10px;background:rgba(0,220,220,.2);top:30%;right:5%;animation-duration:9s;animation-delay:2s"></div>
+  <div class="flav-diamond" style="width:8px;height:8px;background:rgba(125,211,252,.3);bottom:25%;left:6%;animation-duration:6s;animation-delay:4s"></div>
+  <div class="flav-diamond" style="width:12px;height:12px;background:rgba(0,200,255,.2);bottom:15%;right:8%;animation-duration:8s;animation-delay:1s"></div>
+  <!-- Ocean floating dots -->
+  <div class="flav-ocean-particle" style="width:6px;height:6px;background:rgba(0,180,255,.4);left:8%;top:80%;animation-duration:6s;animation-delay:0s"></div>
+  <div class="flav-ocean-particle" style="width:4px;height:4px;background:rgba(0,220,220,.5);left:15%;top:85%;animation-duration:8s;animation-delay:1.5s"></div>
+  <div class="flav-ocean-particle" style="width:5px;height:5px;background:rgba(125,211,252,.4);right:12%;top:75%;animation-duration:7s;animation-delay:3s"></div>
+  <div class="flav-ocean-particle" style="width:3px;height:3px;background:rgba(0,180,255,.6);right:20%;top:88%;animation-duration:5s;animation-delay:0.5s"></div>
+  <div class="flavors-header reveal">
+    <div class="s-tag orange">Flavor Universe</div>
+    <h2 class="s-title warm">FIND YOUR WORLD</h2>
+    <p class="s-sub" style="margin:.7rem auto 0">Four flavors. Four dimensions. One ridiculously good gut.</p>
+  </div>
+  <div class="flavors-grid reveal sd2">
+    <div class="flav-card lime">
+      <div class="flav-bg"></div><div class="flav-grad"></div><div class="flav-dots"></div>
+      <div class="flav-particles" id="fpLime"></div>
+      <div class="flav-can"><div class="flav-can-body"><div class="flav-can-emoji">🍋</div><div class="flav-can-name">Tropicana</div></div></div>
+      <div class="flav-content">
+        <div class="flav-tag">★ Signature Drop</div>
+        <div class="flav-name">About Damn Lime</div>
+        <div class="flav-mood">confident · chaotic · electric</div>
+        <button class="flav-btn">Explore →</button>
+      </div>
+    </div>
+    <div class="flav-card berry">
+      <div class="flav-bg"></div><div class="flav-grad"></div><div class="flav-dots"></div>
+      <div class="flav-particles" id="fpBerry"></div>
+      <div class="flav-can"><div class="flav-can-body"><div class="flav-can-emoji">🫐</div><div class="flav-can-name">Tropicana</div></div></div>
+      <div class="flav-content">
+        <div class="flav-tag">★ New Drop</div>
+        <div class="flav-name">Berry Good As Hell</div>
+        <div class="flav-mood">glamorous · dreamy · calm</div>
+        <button class="flav-btn">Explore →</button>
+      </div>
+    </div>
+    <div class="flav-card citrus">
+      <div class="flav-bg"></div><div class="flav-grad"></div><div class="flav-dots"></div>
+      <div class="flav-particles" id="fpCitrus"></div>
+      <div class="flav-can"><div class="flav-can-body"><div class="flav-can-emoji">🍊</div><div class="flav-can-name">Tropicana</div></div></div>
+      <div class="flav-content">
+        <div class="flav-tag">★ Fan Favourite</div>
+        <div class="flav-name">Tempo Citrus</div>
+        <div class="flav-mood">uplifting · social · vibrant</div>
+        <button class="flav-btn">Explore →</button>
+      </div>
+    </div>
+    <div class="flav-card mango">
+      <div class="flav-bg"></div><div class="flav-grad"></div><div class="flav-dots"></div>
+      <div class="flav-particles" id="fpMango"></div>
+      <div class="flav-can"><div class="flav-can-body"><div class="flav-can-emoji">🥭</div><div class="flav-can-name">Tropicana</div></div></div>
+      <div class="flav-content">
+        <div class="flav-tag">★ Seasonal</div>
+        <div class="flav-name">Mango Mood</div>
+        <div class="flav-mood">chill · confident · sunny</div>
+        <button class="flav-btn">Explore →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER 3 -->
+<div class="ticker-wrap orange">
+  <div class="ticker-inner slow">
+    <span>ABOUT DAMN LIME</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>BERRY GOOD AS HELL</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>TEMPO CITRUS</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>MANGO MOOD</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>ABOUT DAMN LIME</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>BERRY GOOD AS HELL</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>TEMPO CITRUS</span><span class="dot" style="color:var(--black)">✦</span>
+    <span>MANGO MOOD</span><span class="dot" style="color:var(--black)">✦</span>
+  </div>
+</div>
+
+<!-- ════ MUSIC ════ -->
+<section id="music">
+  <div class="music-stars" id="musicStars"></div>
+  <div style="max-width:1400px;margin:0 auto;text-align:center;padding:0 5%" class="reveal">
+    <div class="s-tag purple">🎵 Music × Wellness</div>
+    <h2 class="s-title cool">THE MUSIC HUB</h2>
+    <p class="s-sub" style="margin:.7rem auto 0">Playlists that hydrate your soul as much as your gut.</p>
+  </div>
+  <div class="music-layout">
+    <div class="music-left reveal">
+      <div class="pl-list">
+        <div class="pl-item"><div class="pl-icon" style="background:rgba(255,122,0,.14)">🌟</div><div class="pl-info"><div class="pl-name">Main Character Energy</div><div class="pl-meta">24 tracks · 1hr 26min</div></div><div class="pl-play">▶</div></div>
+        <div class="pl-item"><div class="pl-icon" style="background:rgba(199,255,61,.1)">☀️</div><div class="pl-info"><div class="pl-name">Good As Hell Morning</div><div class="pl-meta">18 tracks · 58min</div></div><div class="pl-play">▶</div></div>
+        <div class="pl-item"><div class="pl-icon" style="background:rgba(106,50,255,.14)">🌙</div><div class="pl-info"><div class="pl-name">Reset Mode</div><div class="pl-meta">20 tracks · 1hr 8min</div></div><div class="pl-play">▶</div></div>
+        <div class="pl-item"><div class="pl-icon" style="background:rgba(255,79,163,.14)">💦</div><div class="pl-info"><div class="pl-name">Hot Girl Hydration</div><div class="pl-meta">22 tracks · 1hr 15min</div></div><div class="pl-play">▶</div></div>
+        <div class="pl-item"><div class="pl-icon" style="background:rgba(255,176,0,.1)">✨</div><div class="pl-info"><div class="pl-name">Sunshine Confidence</div><div class="pl-meta">16 tracks · 52min</div></div><div class="pl-play">▶</div></div>
+      </div>
+      <canvas id="vizCanvas" height="56"></canvas>
+    </div>
+    <div class="music-right reveal sd3">
+      <div class="music-big">SIP BACK<br>AND<br>RELAX.</div>
+      <div class="sp-box">
+        <div class="sp-icon">🎵</div>
+        <div class="sp-title">Spotify Integration</div>
+        <div class="sp-sub">Connect your Spotify account to stream curated Tropicana × Lizzo playlists. Wellness music, live and personalized.</div>
+        <button class="btn-primary magnetic">Connect Spotify ↗</button>
+      </div>
+      <div class="tiktok-box">
+        <div class="tk-lbl">Dance Challenge</div>
+        <div class="tk-tag">#100PercentThatSip</div>
+        <div class="tk-sub">Show your gut glow. Tag us. Get featured.</div>
+        <button class="btn-lime magnetic">Join TikTok Challenge →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ WELLNESS ════ -->
+<section id="wellness">
+  <div style="max-width:1400px;margin:0 auto;text-align:center;padding:0 5%" class="reveal">
+    <div class="s-tag lime">Science × Fun</div>
+    <h2 class="s-title lim">WELLNESS LAB</h2>
+    <p class="s-sub" style="margin:.7rem auto 0">Prebiotics. Postbiotics. Zero compromises. All the flavor.</p>
+  </div>
+  <div class="well-grid" style="padding:0 5%">
+    <div class="well-card reveal sd1"><div class="wglow"></div><div class="well-icon" style="background:rgba(199,255,61,.09)">🦠</div><div class="well-title">Prebiotic Power</div><div class="well-desc">Feeds your good gut bacteria with every sip. Think of it as a glow-up for your microbiome.</div><div class="well-badge" style="background:rgba(199,255,61,.09);color:var(--lime)">Gut Boost ✦</div></div>
+    <div class="well-card reveal sd2"><div class="wglow"></div><div class="well-icon" style="background:rgba(255,122,0,.09)">⚡</div><div class="well-title">Postbiotic Goodness</div><div class="well-desc">Beneficial compounds your gut produces — supercharged and delivered in every can.</div><div class="well-badge" style="background:rgba(255,122,0,.09);color:var(--orange)">Energy ✦</div></div>
+    <div class="well-card reveal sd3"><div class="wglow"></div><div class="well-icon" style="background:rgba(255,79,163,.09)">🌿</div><div class="well-title">Real Fruit Juice</div><div class="well-desc">Tropicana's 100-year legacy of real, fresh-squeezed tropical fruit. No compromises, ever.</div><div class="well-badge" style="background:rgba(255,79,163,.09);color:var(--pink)">100% Real ✦</div></div>
+    <div class="well-card reveal sd4"><div class="wglow"></div><div class="well-icon" style="background:rgba(106,50,255,.09)">💧</div><div class="well-title">Lower Sugar</div><div class="well-desc">All the fizzy joy, minus the guilt trip. Up to 40% less sugar than the leading soda brands.</div><div class="well-badge" style="background:rgba(106,50,255,.09);color:#b899ff">Guilt-Free ✦</div></div>
+    <div class="well-card reveal sd5"><div class="wglow"></div><div class="well-icon" style="background:rgba(255,92,92,.09)">🧪</div><div class="well-title">Clean Ingredients</div><div class="well-desc">No artificial colors. No weird stuff. Every ingredient has a reason to be there. Period.</div><div class="well-badge" style="background:rgba(255,92,92,.09);color:var(--coral)">Clean Label ✦</div></div>
+    <div class="well-card reveal sd6"><div class="wglow"></div><div class="well-icon" style="background:rgba(255,176,0,.09)">🌍</div><div class="well-title">Ethically Sourced</div><div class="well-desc">Fruits sourced from farms that give back. Because what's good for the planet tastes better.</div><div class="well-badge" style="background:rgba(255,176,0,.09);color:var(--gold)">Planet First ✦</div></div>
+  </div>
+  <div class="well-extras reveal" style="padding:0 5%">
+    <div class="ex-panel">
+      <div class="ex-lbl" style="color:var(--lime)">Sugar Comparison</div>
+      <div class="ex-title">VS. THE COMPETITION</div>
+      <div class="sbr"><div class="sbr-top"><span class="sbr-name">Good As Hell Soda</span><span class="sbr-val" style="color:var(--lime)">8g</span></div><div class="sbr-track"><div class="sbr-fill" style="width:20%;background:var(--lime)"></div></div></div>
+      <div class="sbr"><div class="sbr-top"><span class="sbr-name" style="color:rgba(255,249,241,.5)">Leading Cola Brand</span><span class="sbr-val" style="color:var(--coral)">39g</span></div><div class="sbr-track"><div class="sbr-fill" style="width:97%;background:var(--coral)"></div></div></div>
+      <div class="sbr"><div class="sbr-top"><span class="sbr-name" style="color:rgba(255,249,241,.5)">Leading Energy Drink</span><span class="sbr-val" style="color:var(--orange)">27g</span></div><div class="sbr-track"><div class="sbr-fill" style="width:68%;background:var(--orange)"></div></div></div>
+    </div>
+    <div class="ex-panel">
+      <div class="ex-lbl" style="color:var(--orange)">Ingredient Spotlight</div>
+      <div class="ex-title">WHAT'S INSIDE</div>
+      <div class="ingr-row"><span class="ingr-name">Chicory Root Fiber</span><span class="ingr-chk" style="background:rgba(199,255,61,.1);color:var(--lime)">Prebiotic ✓</span></div>
+      <div class="ingr-row"><span class="ingr-name">Postbiotic Complex</span><span class="ingr-chk" style="background:rgba(255,122,0,.1);color:var(--orange)">Gut Health ✓</span></div>
+      <div class="ingr-row"><span class="ingr-name">Real Citrus Juice</span><span class="ingr-chk" style="background:rgba(255,176,0,.1);color:var(--gold)">Real Fruit ✓</span></div>
+      <div class="ingr-row"><span class="ingr-name">Natural Carbonation</span><span class="ingr-chk" style="background:rgba(106,50,255,.1);color:#b899ff">Clean ✓</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ SUSTAINABILITY ════ -->
+<section id="sustainability">
+  <div class="sustain-wrap">
+    <div class="reveal">
+      <span class="s-tag lime">Planet First</span>
+      <div class="sustain-big" style="margin-top:1.5rem">
+        <span class="sg1">DRINK.</span><br><span class="sg2">SCAN.</span><br><span class="sg1">RETURN.</span>
+      </div>
+      <p class="sustain-desc">Every can you return earns rewards, reduces emissions, and keeps the planet as fresh as your gut. Scan the QR. Close the loop.</p>
+      <div class="stats-row">
+        <div class="stat-b"><div class="stat-n" id="sCans">0</div><div class="stat-l">Cans Recycled</div></div>
+        <div class="stat-b"><div class="stat-n" id="sKg">0</div><div class="stat-l">kg CO₂ Saved</div></div>
+        <div class="stat-b"><div class="stat-n" id="sPpl">0</div><div class="stat-l">People Joined</div></div>
+      </div>
+      <button class="btn-primary magnetic">Learn About Our Impact →</button>
+    </div>
+    <div class="reveal sd3">
+      <div class="scan-box">
+        <div class="scan-title">SCAN TO EARN</div>
+        <p class="scan-sub">Return your can. Scan the code. Unlock rewards, discounts, and concert entries.</p>
+        <div class="scan-qr"><span style="font-size:1.5rem">📱</span><span>QR Code<br>Placeholder</span></div>
+        <div class="reward-tags">
+          <span class="rtag">Discounts</span><span class="rtag">Concert Entries</span><span class="rtag">Eco Badges</span><span class="rtag">Merch Drops</span><span class="rtag">Exclusive Access</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sparkle divider -->
+<div style="background:var(--black);padding:.5rem 0">
+  <div class="sparkle-div">
+    <div class="sparkle-div-inner">
+      <span class="sp-star" style="color:var(--pink);animation-delay:0s">✦</span>
+      <span class="sp-star" style="color:var(--lime);animation-delay:.3s">★</span>
+      <span class="sp-star" style="color:var(--orange);animation-delay:.6s">◆</span>
+      <span class="sp-star" style="color:var(--purple);animation-delay:.9s">✦</span>
+      <span class="sp-star" style="color:var(--pink);animation-delay:1.2s">★</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ COMMUNITY ════ -->
+<section id="community">
+  <div class="neon-corner nc-tl nc-pink"></div>
+  <div style="text-align:center;padding:0 5%" class="reveal">
+    <div class="s-tag pink">✦ The Movement ✦</div>
+    <h2 class="s-title cool">COMMUNITY HUB</h2>
+    <p class="s-sub" style="margin:.7rem auto 0">Real people. Real glows. Real confidence.</p>
+  </div>
+  <div class="comm-feed" style="padding:0 2%;max-width:1400px;margin:3rem auto 0">
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:0s">🍋✨</div><div class="post-tag" style="color:var(--lime)">#AboutDamnLime</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--lime)">#GutGoodAsHell</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:.5s">🫐💜</div><div class="post-tag" style="color:#b899ff">#BerryVibes</div></div><div class="post-overlay"><div class="pol-tag" style="color:#b899ff">#100PercentThatSip</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:1s">🍊🔥</div><div class="post-tag" style="color:var(--orange)">#TempoCitrus</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--orange)">#InsideOutEnergy</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:1.5s">🥭☀️</div><div class="post-tag" style="color:var(--gold)">#MangoMood</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--gold)">#SipLikeYouMeanIt</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:2s">💅🌟</div><div class="post-tag" style="color:var(--pink)">#MainCharacter</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--pink)">#GoodAsHell</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:.8s">⚡🎵</div><div class="post-tag" style="color:var(--lime)">#LizzoEnergy</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--lime)">#AboutDamnTime</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:1.3s">💦🌊</div><div class="post-tag" style="color:#b899ff">#HotGirlHydration</div></div><div class="post-overlay"><div class="pol-tag" style="color:#b899ff">#GlowFromWithin</div><div class="pol-sub">View post</div></div></div>
+    <div class="comm-post"><div class="post-in"><div class="post-emoji" style="animation-delay:.3s">🌈✦</div><div class="post-tag" style="color:var(--orange)">#ConfidenceWithin</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--orange)">#Tropicana</div><div class="pol-sub">View post</div></div></div>
+  </div>
+  <div class="hashtag-cloud reveal" style="padding:0 5%">
+    <span class="hashtag">#GutGoodAsHell</span><span class="hashtag">#100PercentThatSip</span><span class="hashtag">#InsideOutEnergy</span><span class="hashtag">#SipLikeYouMeanIt</span><span class="hashtag">#GoodAsHellInsideOut</span><span class="hashtag">#TropicanaxLizzo</span><span class="hashtag">#GlowFromWithin</span><span class="hashtag">#MainCharacterEnergy</span>
+  </div>
+</section>
+
+<!-- ════ STORE ════ -->
+<section id="store">
+  <div class="store-grid-bg"></div>
+  <div class="neon-corner nc-tl nc-orange"></div>
+  <div style="text-align:center;padding:0 5%" class="reveal">
+    <div class="s-tag orange">🛍 Limited Drop</div>
+    <h2 class="s-title warm">THE STORE</h2>
+    <p class="s-sub" style="margin:.7rem auto 0">Streetwear meets tropical glam. Merch that moves as good as you do.</p>
+  </div>
+  <div class="prod-grid reveal sd2" style="padding:0 5%">
+    <div class="prod-card"><div class="prod-img"><div class="prod-shine"></div><div class="prod-emoji">🥤</div><div class="prod-ph">Product Image Here</div></div><div class="prod-info"><div class="prod-cat">★ Limited Edition</div><div class="prod-name">Holographic Can Bundle</div><div class="prod-price">$24.99 · 6-pack</div></div><button class="prod-add">Add to Cart</button></div>
+    <div class="prod-card"><div class="prod-img"><div class="prod-shine"></div><div class="prod-emoji">👕</div><div class="prod-ph">Product Image Here</div></div><div class="prod-info"><div class="prod-cat">★ Collab Drop</div><div class="prod-name">Oversized "100% That Sip" Hoodie</div><div class="prod-price">$65.00</div></div><button class="prod-add">Add to Cart</button></div>
+    <div class="prod-card"><div class="prod-img"><div class="prod-shine"></div><div class="prod-emoji">👜</div><div class="prod-ph">Product Image Here</div></div><div class="prod-info"><div class="prod-cat">★ Eco Fave</div><div class="prod-name">Tropical Eco Tote Bag</div><div class="prod-price">$22.00</div></div><button class="prod-add">Add to Cart</button></div>
+    <div class="prod-card"><div class="prod-img"><div class="prod-shine"></div><div class="prod-emoji">🍵</div><div class="prod-ph">Product Image Here</div></div><div class="prod-info"><div class="prod-cat">★ Bestseller</div><div class="prod-name">GutGlow Reusable Tumbler</div><div class="prod-price">$38.00</div></div><button class="prod-add">Add to Cart</button></div>
+    <div class="prod-card"><div class="prod-img"><div class="prod-shine"></div><div class="prod-emoji">🏺</div><div class="prod-ph">Product Image Here</div></div><div class="prod-info"><div class="prod-cat">★ Collector's</div><div class="prod-name">Collectible Glass Bottle Set</div><div class="prod-price">$45.00</div></div><button class="prod-add">Add to Cart</button></div>
+    <div class="prod-card" style="background:rgba(255,122,0,.03);border-color:rgba(255,122,0,.12)">
+      <div class="prod-soon">
+        <div style="font-size:3rem">🔮</div>
+        <div class="prod-soon-title">MORE DROPPING SOON</div>
+        <div style="font-size:.75rem;color:rgba(255,249,241,.3);letter-spacing:.1em;text-align:center">Subscribe for early access</div>
+        <div class="email-row"><input type="email" placeholder="your@email.com"/><button>GO</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL TICKER -->
+<div class="ticker-wrap lime" style="padding:.9rem 0">
+  <div class="ticker-inner fast rev">
+    <span>SHOP NOW</span><span class="dot">✦</span><span>LIMITED DROP</span><span class="dot">✦</span><span>FREE SHIPPING OVER $50</span><span class="dot">✦</span><span>SCAN TO EARN</span><span class="dot">✦</span><span>JOIN THE MOVEMENT</span><span class="dot">✦</span>
+    <span>SHOP NOW</span><span class="dot">✦</span><span>LIMITED DROP</span><span class="dot">✦</span><span>FREE SHIPPING OVER $50</span><span class="dot">✦</span><span>SCAN TO EARN</span><span class="dot">✦</span><span>JOIN THE MOVEMENT</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="foot-ticker"><div class="foot-ticker-inner"><span>GOOD GUT. GOOD ENERGY.</span><span>·</span><span>100% THAT SIP.</span><span>·</span><span>SIP BACK AND RELAX.</span><span>·</span><span>GLOW FROM WITHIN.</span><span>·</span><span>ABOUT DAMN LIME.</span><span>·</span><span>CONFIDENCE STARTS WITHIN.</span><span>·</span><span>GOOD GUT. GOOD ENERGY.</span><span>·</span><span>100% THAT SIP.</span><span>·</span><span>SIP BACK AND RELAX.</span><span>·</span></div></div>
+  <div id="footBubbles"></div>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="foot-pill"><span class="fp-o">Tropicana</span><span class="fp-d">×</span><span class="fp-p">Lizzo</span></div>
+      <p class="foot-desc">A bold tropical soda that loves your gut, your glow, and your confidence. Good As Hell — Inside &amp; Out.</p>
+      <div class="foot-social">
+        <a class="soc-btn" href="#" aria-label="TikTok">TK</a>
+        <a class="soc-btn" href="#" aria-label="Instagram">IG</a>
+        <a class="soc-btn" href="#" aria-label="Spotify">SP</a>
+        <a class="soc-btn" href="#" aria-label="Twitter">X</a>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Flavors</h4><ul><li><a href="#">About Damn Lime</a></li><li><a href="#">Berry Good As Hell</a></li><li><a href="#">Tempo Citrus</a></li><li><a href="#">Mango Mood</a></li></ul></div>
+    <div class="foot-col"><h4>Experience</h4><ul><li><a href="#">Gut Glow Quiz</a></li><li><a href="#">Music Hub</a></li><li><a href="#">Wellness Lab</a></li><li><a href="#">Community</a></li><li><a href="#">Events</a></li></ul></div>
+    <div class="foot-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Press</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2025 Tropicana × Lizzo. Good As Hell Inside &amp; Out™</p>
+    <div class="foot-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Accessibility</a></div>
+  </div>
+</footer>
+
+<script>
+/* ════ SMOOTH SCROLL ════ */
+function smoothTo(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})}
+
+/* ════ CURSOR (desktop/mouse only) ════ */
+const _hasPointer = window.matchMedia('(pointer: fine)').matches;
+const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+if(_hasPointer && cur && ring){
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{
+    mx=e.clientX;my=e.clientY;
+    cur.style.left=mx+'px';cur.style.top=my+'px';
+  });
+  (function animRing(){
+    rx+=(mx-rx)*.1;ry+=(my-ry)*.1;
+    ring.style.left=rx+'px';ring.style.top=ry+'px';
+    requestAnimationFrame(animRing);
+  })();
+  document.querySelectorAll('button,a,.flav-card,.comm-post,.pl-item,.well-card,.prod-card,.lyric-item,.hashtag,.rtag').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{
+      cur.style.width='20px';cur.style.height='20px';
+      ring.style.width='54px';ring.style.height='54px';
+      ring.style.borderColor='rgba(199,255,61,.85)';
+    });
+    el.addEventListener('mouseleave',()=>{
+      cur.style.width='12px';cur.style.height='12px';
+      ring.style.width='40px';ring.style.height='40px';
+      ring.style.borderColor='rgba(199,255,61,.45)';
+    });
+  });
+}
+
+/* ════ PRELOADER ════ */
+// Preloader blobs
+const pb=document.getElementById('preBg');
+const pbColors=['rgba(255,122,0,.22)','rgba(255,79,163,.2)','rgba(106,50,255,.2)','rgba(199,255,61,.12)'];
+pbColors.forEach((c,i)=>{
+  const d=document.createElement('div');d.className='pre-blob';
+  const s=Math.random()*300+200;
+  d.style.cssText=`width:${s}px;height:${s}px;background:${c};top:${Math.random()*100}%;left:${Math.random()*100}%;animation-duration:${8+i*2}s;animation-delay:${i*1.5}s;filter:blur(100px)`;
+  pb.appendChild(d);
+});
+const preWords=['SHAKE UP YOUR ENERGY.','GLOW FROM WITHIN.','GOOD AS HELL INSIDE & OUT.','SIP LIKE YOU MEAN IT.'];
+let wi=0;const ps=document.getElementById('preSub');
+function cycleWord(){
+  ps.style.cssText='transition:opacity .35s,transform .35s;opacity:0;transform:translateY(8px)';
+  setTimeout(()=>{
+    ps.textContent=preWords[wi++%preWords.length];
+    ps.style.cssText='transition:opacity .4s,transform .4s;opacity:1;transform:translateY(0)';
+  },380);
+}
+setTimeout(cycleWord,700);
+const wt=setInterval(cycleWord,1500);
+setTimeout(()=>{document.getElementById('preFill').style.width='100%'},400);
+setTimeout(()=>{
+  clearInterval(wt);
+  const pl=document.getElementById('preloader');
+  pl.classList.add('out');
+  setTimeout(()=>{if(pl.parentNode)pl.parentNode.removeChild(pl)},1000);
+},4800);
+
+/* ════ NAV ════ */
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',scrollY>55);
+});
+
+/* ════ HERO CANVAS PARTICLES ════ */
+const hCanvas=document.getElementById('heroCanvas');
+const hCtx=hCanvas.getContext('2d');
+function resizeHC(){hCanvas.width=hCanvas.offsetWidth;hCanvas.height=hCanvas.offsetHeight}
+resizeHC();window.addEventListener('resize',resizeHC);
+const PCOLS=['hsl(30,100%,60%)','hsl(320,100%,65%)','hsl(268,100%,65%)','hsl(78,100%,58%)','hsl(48,100%,60%)'];
+class Pt{
+  constructor(){this.reset()}
+  reset(){this.x=Math.random()*hCanvas.width;this.y=Math.random()*hCanvas.height;this.vx=(Math.random()-.5)*.32;this.vy=-Math.random()*.42-.12;this.r=Math.random()*2.8+.7;this.a=Math.random()*.55+.18;this.c=PCOLS[Math.floor(Math.random()*PCOLS.length)]}
+  upd(){this.x+=this.vx;this.y+=this.vy;this.a-=.0014;if(this.a<=0||this.y<-8)this.reset()}
+  draw(){hCtx.beginPath();hCtx.arc(this.x,this.y,this.r,0,Math.PI*2);hCtx.fillStyle=this.c;hCtx.globalAlpha=this.a;hCtx.fill();hCtx.globalAlpha=1}
+}
+const pts=Array.from({length:160},()=>new Pt());
+(function animHC(){hCtx.clearRect(0,0,hCanvas.width,hCanvas.height);pts.forEach(p=>{p.upd();p.draw()});requestAnimationFrame(animHC)})();
+
+/* ════ CAN CURSOR PARALLAX (mouse only) ════ */
+const can3d=document.getElementById('can3d');
+if(_hasPointer && can3d){
+  document.addEventListener('mousemove',e=>{
+    const heroRect=document.getElementById('hero').getBoundingClientRect();
+    if(e.clientY<heroRect.bottom){
+      const cx=heroRect.width/2,cy=heroRect.height/2;
+      const dx=(e.clientX-cx)/cx,dy=(e.clientY-cy)/cy;
+      can3d.style.transform=`rotateX(${8-dy*12}deg) rotateY(${-20+dx*18}deg)`;
+    }
+  });
+}
+
+/* Can bubbles */
+const canBubbles=document.getElementById('canBubbles');
+if(canBubbles){
+  setInterval(()=>{
+    const b=document.createElement('div');
+    b.className='can-bubble';
+    const s=Math.random()*12+5;
+    const dx=(Math.random()-0.5)*60;
+    b.style.setProperty('--dx',dx+'px');
+    b.style.cssText+=`width:${s}px;height:${s}px;left:${40+Math.random()*20}%;bottom:${20+Math.random()*40}%;animation-duration:${(1.8+Math.random()*1.5).toFixed(1)}s;animation-delay:0s`;
+    canBubbles.appendChild(b);
+    setTimeout(()=>{if(b.parentNode)b.parentNode.removeChild(b)},3000);
+  },400);
+}
+
+/* ════ SOUNDWAVE ════ */
+const sw=document.getElementById('swWrap');
+if(sw){for(let i=0;i<40;i++){const b=document.createElement('div');b.className='sw-b';b.style.cssText=`flex:1;animation-delay:${(i*.048).toFixed(2)}s;animation-duration:${(.65+Math.random()*.85).toFixed(2)}s`;sw.appendChild(b)}}
+
+/* ════ VIZ CANVAS (Music) ════ */
+const vizC=document.getElementById('vizCanvas');
+if(vizC){
+  const vCtx=vizC.getContext('2d');
+  const bars=64;
+  const barHeights=Array.from({length:bars},()=>Math.random());
+  const barVels=Array.from({length:bars},()=>(Math.random()-.5)*.04);
+  function animViz(){
+    vizC.width=vizC.offsetWidth;
+    const bw=vizC.width/bars;
+    vCtx.clearRect(0,0,vizC.width,vizC.height);
+    barHeights.forEach((h,i)=>{
+      barHeights[i]=Math.max(.05,Math.min(1,h+barVels[i]));
+      if(barHeights[i]<=.05||barHeights[i]>=1)barVels[i]*=-1;
+      barVels[i]+=(Math.random()-.5)*.01;
+      const bh=barHeights[i]*vizC.height;
+      const x=i*bw;
+      const grad=vCtx.createLinearGradient(0,vizC.height,0,0);
+      grad.addColorStop(0,'rgba(106,50,255,.9)');
+      grad.addColorStop(.5,'rgba(255,79,163,.7)');
+      grad.addColorStop(1,'rgba(199,255,61,.5)');
+      vCtx.fillStyle=grad;
+      vCtx.fillRect(x+1,vizC.height-bh,bw-2,bh);
+    });
+    requestAnimationFrame(animViz);
+  }
+  animViz();
+}
+
+/* ════ MUSIC STARS ════ */
+const ms=document.getElementById('musicStars');
+if(ms){for(let i=0;i<90;i++){const s=document.createElement('div');s.className='mstar';const sz=Math.random()*2.8+.7;s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${(Math.random()*3.5+1.5).toFixed(1)}s;animation-delay:${(Math.random()*5).toFixed(1)}s`;ms.appendChild(s)}}
+
+/* ════ FLAVOR PARTICLES ════ */
+function mkFP(id,color){
+  const c=document.getElementById(id);if(!c)return;
+  for(let i=0;i<16;i++){
+    const p=document.createElement('div');p.className='fp';
+    const s=Math.random()*8+2;
+    p.style.cssText=`width:${s}px;height:${s}px;background:${color};left:${Math.random()*100}%;animation-duration:${(Math.random()*8+5).toFixed(1)}s;animation-delay:${(Math.random()*5).toFixed(1)}s;opacity:.42;border-radius:50%`;
+    c.appendChild(p);
+  }
+}
+mkFP('fpLime','rgba(199,255,61,.75)');
+mkFP('fpBerry','rgba(168,85,247,.75)');
+mkFP('fpCitrus','rgba(255,122,0,.75)');
+mkFP('fpMango','rgba(255,176,0,.75)');
+
+/* ════ FOOTER BUBBLES ════ */
+const fb=document.getElementById('footBubbles');
+if(fb){
+  setInterval(()=>{
+    const b=document.createElement('div');b.className='foot-bubble';
+    const s=Math.random()*50+15;
+    b.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:-${s}px;animation-duration:${(4+Math.random()*6).toFixed(1)}s`;
+    fb.appendChild(b);
+    setTimeout(()=>{if(b.parentNode)b.parentNode.removeChild(b)},10000);
+  },800);
+}
+
+/* ════ MAGNETIC BUTTONS (mouse only) ════ */
+if(_hasPointer){
+  document.querySelectorAll('.magnetic').forEach(btn=>{
+    btn.addEventListener('mousemove',e=>{
+      const r=btn.getBoundingClientRect();
+      const dx=e.clientX-(r.left+r.width/2);
+      const dy=e.clientY-(r.top+r.height/2);
+      btn.style.transform=`translate(${dx*.2}px,${dy*.2}px) scale(1.04)`;
+    });
+    btn.addEventListener('mouseleave',()=>{
+      btn.style.transform='';
+      btn.style.transition='transform .5s cubic-bezier(.25,.46,.45,.94)';
+      setTimeout(()=>{btn.style.transition=''},500);
+    });
+  });
+}
+
+/* ════ RIPPLE ════ */
+document.querySelectorAll('button').forEach(btn=>{
+  btn.addEventListener('click',e=>{
+    const r=btn.getBoundingClientRect();
+    const rp=document.createElement('div');rp.className='ripple';
+    const s=Math.max(r.width,r.height);
+    rp.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX-r.left-s/2}px;top:${e.clientY-r.top-s/2}px`;
+    btn.appendChild(rp);
+    setTimeout(()=>{if(rp.parentNode)rp.parentNode.removeChild(rp)},700);
+  });
+});
+
+/* ════ QUIZ ════ */
+const QS=[
+  {q:"What's your current energy vibe?",h:"No judgment. We just need the data.",opts:[{e:"⚡",l:"On fire, unstoppable"},{e:"🌊",l:"Chill but confident"},{e:"☀️",l:"Warm and glowing"},{e:"🌙",l:"Low-key, need a boost"}]},
+  {q:"Hydration check. How's your water intake today?",h:"Be honest with yourself.",opts:[{e:"💦",l:"I am basically water"},{e:"🥤",l:"A few glasses, doing OK"},{e:"😬",l:"Forgot to drink anything"},{e:"☕",l:"Does coffee count?"}]},
+  {q:"Your gut is basically your second brain. How does yours feel?",h:"Your microbiome knows the answer.",opts:[{e:"🦋",l:"Butterflies — in a good way"},{e:"😤",l:"Needs some TLC"},{e:"🔥",l:"Energized and firing"},{e:"😴",l:"Sluggish, send help"}]},
+  {q:"Pick a Lizzo lyric that's YOURS right now:",h:"There is no wrong answer here.",opts:[{e:"💅",l:"I just took a DNA test, turns out I'm 100%"},{e:"✨",l:"Good as hell. Period."},{e:"🎵",l:"About damn time."},{e:"❤️",l:"I love you, myself"}]},
+  {q:"Your ideal sip moment is...",h:"Close your eyes. You're there.",opts:[{e:"🎉",l:"Party, post-dance, main event"},{e:"🌅",l:"Morning glow ritual"},{e:"🏋️",l:"Mid-workout recharge"},{e:"🛋️",l:"Couch, chill, Netflix"}]},
+];
+const RES=[
+  {hl:"You're 100% THAT SIP.",flav:"About Damn Lime",pl:"Main Character Energy 🎵",tip:"Hydrate first. Glow second.",aff:"Your aura is electric. Keep glowing from the inside out.",sc:98},
+  {hl:"Berry Good As Hell, babe.",flav:"Berry Good As Hell",pl:"Hot Girl Hydration 🫐",tip:"Give your gut some love today.",aff:"You're soft power personified. Dreamy and unstoppable.",sc:91},
+  {hl:"TEMPO IS YOUR RHYTHM.",flav:"Tempo Citrus",pl:"Sunshine Confidence ☀️",tip:"Move your body. Your gut follows.",aff:"Your energy lifts the whole room. Own it.",sc:87},
+  {hl:"MANGO MOOD: ACTIVATED.",flav:"Mango Mood",pl:"Good As Hell Morning 🥭",tip:"Slow down. You're glowing anyway.",aff:"Confident. Chill. Completely yourself.",sc:84},
+];
+let curQ=0,ans=[];
+function renderQ(i){
+  const q=QS[i];
+  const body=document.getElementById('qBody');
+  body.style.opacity='0';body.style.transform='translateX(20px)';
+  setTimeout(()=>{
+    body.innerHTML=`
+      <div class="quiz-q-lbl">Question ${i+1} of ${QS.length}</div>
+      <div class="quiz-q-txt">${q.q}</div>
+      <div class="quiz-hint">${q.h}</div>
+      <div class="quiz-opts" id="qOpts"></div>
+      <div class="quiz-nav">
+        <span class="q-cnt">${i+1} / ${QS.length}</span>
+        ${i>0?`<button class="btn-back" onclick="prevQ()">← Back</button>`:'<div></div>'}
+      </div>`;
+    const opts=document.getElementById('qOpts');
+    q.opts.forEach((o,idx)=>{
+      const b=document.createElement('button');
+      b.className='qopt'+(ans[i]===idx?' sel':'');
+      b.innerHTML=`<span class="qe">${o.e}</span><span>${o.l}</span>`;
+      b.onclick=()=>{ans[i]=idx;nextQ()};
+      opts.appendChild(b);
+    });
+    body.style.transition='opacity .35s,transform .35s';
+    body.style.opacity='1';body.style.transform='translateX(0)';
+  },150);
+  document.querySelectorAll('.ps').forEach((d,di)=>{
+    d.className='ps';
+    if(di<i)d.classList.add('done');
+    else if(di===i)d.classList.add('active');
+  });
+}
+function nextQ(){curQ++;if(curQ>=QS.length){showRes();return}renderQ(curQ)}
+function prevQ(){curQ--;renderQ(curQ)}
+function showRes(){
+  document.getElementById('qBody').style.display='none';
+  document.getElementById('qProg').style.display='none';
+  const r=RES[ans[QS.length-1]||0];
+  document.getElementById('rScore').textContent=r.sc;
+  document.getElementById('rHl').textContent=r.hl;
+  document.getElementById('rFlavor').textContent='✦ '+r.flav;
+  document.getElementById('rPl').textContent=r.pl;
+  document.getElementById('rTip').textContent=r.tip;
+  document.getElementById('rAff').textContent='"'+r.aff+'"';
+  document.getElementById('qResult').style.display='block';
+}
+function retakeQuiz(){
+  curQ=0;ans=[];
+  document.getElementById('qBody').style.display='block';
+  document.getElementById('qProg').style.display='flex';
+  document.getElementById('qResult').style.display='none';
+  renderQ(0);
+}
+renderQ(0);
+
+/* ════ COUNTERS ════ */
+function animCount(el,target,suf){
+  let n=0;const step=target/80;
+  const t=setInterval(()=>{n=Math.min(n+step,target);el.textContent=Math.round(n).toLocaleString()+suf;if(n>=target)clearInterval(t)},20);
+}
+const susObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      animCount(document.getElementById('sCans'),1243891,'');
+      animCount(document.getElementById('sKg'),48200,'');
+      animCount(document.getElementById('sPpl'),94300,'');
+      susObs.disconnect();
+    }
+  });
+},{threshold:.3});
+const susEl=document.getElementById('sustainability');
+if(susEl)susObs.observe(susEl);
+
+/* ════ SCROLL REVEAL ════ */
+const revObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')});
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+
+/* ════ GLOBAL FLOATING BUBBLES (random click) ════ */
+document.addEventListener('click',e=>{
+  for(let i=0;i<5;i++){
+    const b=document.createElement('div');
+    b.className='gbl-bubble';
+    const s=Math.random()*18+6;
+    const colors=['rgba(199,255,61,.5)','rgba(255,122,0,.5)','rgba(255,79,163,.5)','rgba(106,50,255,.5)'];
+    b.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX+Math.random()*40-20}px;top:${e.clientY+Math.random()*30-15}px;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${(1.5+Math.random()*1.5).toFixed(1)}s;filter:blur(1px)`;
+    document.body.appendChild(b);
+    setTimeout(()=>{if(b.parentNode)b.parentNode.removeChild(b)},3000);
+  }
+});
+</script>
+</body>
+</html>
