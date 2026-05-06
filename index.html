@@ -858,6 +858,331 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
   .glow-stats-grid{grid-template-columns:1fr 1fr}
   .sp-header{flex-direction:column}
 }
+
+/* ======================================================
+   LIGHT GRADIENT MODE
+   Palette inspired by the supplied mint-to-tangerine swatch.
+   ====================================================== */
+:root{
+  --white:#fffefa;
+  --cream:#fff7e7;
+  --ink:#0d2923;
+  --ink-mid:rgba(13,41,35,.88);
+  --ink-soft:rgba(13,41,35,.68);
+  --pink:#4aa997;
+  --pink-dark:#168673;
+  --pink-pale:#d9f7ef;
+  --teal:#20a98f;
+  --teal-light:#9ee8da;
+  --teal-deep:#087966;
+  --gold:#f2b84c;
+  --gold-light:#ffe3a6;
+  --orange:#ee8022;
+  --can-lime:#7fa03e;
+  --can-lime-light:#d7e7a4;
+  --can-lime-dark:#587520;
+  --can-tang:#ee8022;
+  --can-tang-light:#ffc36a;
+  --can-tang-dark:#bf5f16;
+  --can-guava:#4aa997;
+  --can-guava-light:#aee6d9;
+  --can-guava-dark:#168673;
+  --on-dark:var(--ink);
+  --on-dark-mid:var(--ink-mid);
+  --on-dark-soft:var(--ink-soft);
+  --glass:rgba(255,255,255,.68);
+  --glass-border:rgba(14,118,98,.16);
+  --bg-hero:linear-gradient(125deg,#f0fff8 0%,#bdeee2 38%,#fff0c7 69%,#ffc165 100%);
+  --bg-why:linear-gradient(135deg,#fbfff6 0%,#dff8ed 45%,#fff3cb 100%);
+  --bg-mystery:linear-gradient(140deg,#eefcf8 0%,#c4f0e5 42%,#ffe0a3 100%);
+  --bg-flavors:linear-gradient(135deg,#fff9ed 0%,#def7ee 44%,#ffd29a 100%);
+  --bg-threeways:linear-gradient(135deg,#fff5d7 0%,#ecfff8 46%,#c9f1e6 100%);
+  --bg-quiz:linear-gradient(135deg,#fff8e9 0%,#f6fff6 42%,#d6f4ea 100%);
+  --bg-music:linear-gradient(135deg,#f1fff9 0%,#ffe7b8 55%,#ffd19b 100%);
+  --bg-wellness:linear-gradient(135deg,#f7fff8 0%,#d8f5ea 48%,#fff0c8 100%);
+  --bg-community:linear-gradient(135deg,#fff3d8 0%,#f3fff7 46%,#c9f1e6 100%);
+}
+html,body{background:#fff8ea!important;color:var(--ink)!important}
+section{scroll-margin-top:86px}
+body::before{opacity:.45;mix-blend-mode:multiply}
+#cur{background:var(--orange);mix-blend-mode:multiply}
+#cur-ring{border-color:rgba(8,121,102,.45)}
+::-webkit-scrollbar-track{background:#f6fff8}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--teal),var(--gold),var(--orange))}
+
+#preloader{background:linear-gradient(135deg,#f0fff8,#d4f4ea,#ffe4ad)!important}
+.pre-ring-inner{background:#fffaf0!important}
+.pre-logo{background:linear-gradient(135deg,var(--teal),var(--gold),var(--orange))!important}
+.pre-sub{color:var(--ink-mid)!important}
+.pre-bar{background:rgba(23,55,47,.12)!important}
+
+nav.scrolled{background:rgba(255,252,241,.94)!important;border-bottom:1px solid rgba(8,121,102,.18)!important;box-shadow:0 12px 38px rgba(8,121,102,.1)!important}
+.nav-fizzo,.foot-fizzo{background:linear-gradient(135deg,#082f27,var(--teal-deep),#6b7427)!important;filter:drop-shadow(0 8px 18px rgba(8,47,39,.14))}
+.inline-logo{background:linear-gradient(135deg,#082f27,var(--teal-deep),var(--orange))!important}
+.collab-brand-name .inline-logo,.foot-brand .inline-logo{background:#082f27!important}
+.nav-by,.nav-links a{color:var(--ink-mid)!important}
+.nav-links a:hover{color:var(--teal-deep)!important}
+.nav-cta,.btn-primary,.vibe-submit,.shake-btn,.btn-gold{background:linear-gradient(135deg,var(--teal),var(--gold),var(--orange))!important;color:#fff!important;box-shadow:0 12px 28px rgba(238,128,34,.22)!important}
+.btn-secondary,.btn-outline{background:rgba(255,255,255,.66)!important;color:var(--ink)!important;border-color:rgba(8,121,102,.25)!important;box-shadow:0 10px 25px rgba(8,121,102,.08)!important}
+
+#hero{background:var(--bg-hero)}
+#lizzo-collab{background:linear-gradient(135deg,#f4fff9 0%,#c8f1e6 48%,#ffe0a3 100%)!important}
+#social-proof{background:linear-gradient(135deg,#fff9e9 0%,#e3f8ef 45%,#ffd6a0 100%)!important}
+#why-fizzo{background:var(--bg-why)!important}
+#mystery{background:var(--bg-mystery)!important}
+#flavors{background:var(--bg-flavors)!important}
+#three-ways{background:var(--bg-threeways)!important}
+#quiz{background:var(--bg-quiz)!important}
+#community{background:var(--bg-community)!important}
+#where-to-buy{background:linear-gradient(135deg,#eefdf7 0%,#fff0bf 50%,#ffc985 100%)!important}
+#countdown-drop{background:linear-gradient(135deg,#fff6dc 0%,#e7fff7 45%,#ffd18d 100%)!important}
+#scratch-section{background:linear-gradient(160deg,#fff6e8 0%,#e4f9ef 46%,#ffd7a0 100%)!important}
+#glow-stats{background:linear-gradient(135deg,#f0fff8 0%,#c8efe4 44%,#ffe2a4 100%)!important}
+#fan-wall{background:linear-gradient(135deg,#fffefa 0%,#ecfff7 52%,#fff0c5 100%)!important}
+#daily-ritual{background:linear-gradient(135deg,#fff7df 0%,#f2fff8 48%,#d2f4e9 100%)!important}
+#reaction-bar{background:rgba(255,250,236,.92)!important;border-color:rgba(8,121,102,.14)!important;backdrop-filter:blur(18px)}
+footer{background:linear-gradient(135deg,#fff4da 0%,#e5fbf2 52%,#ffc985 100%)!important}
+section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!important;transform:none!important}
+
+.ticker-wrap.pink-t{background:linear-gradient(135deg,#d9f7ef,#aee6d9,#ffe0a3)!important}
+.ticker-wrap.gold-t{background:linear-gradient(135deg,#fff0c5,#ffc36a,#f6e7aa,#c8efe4)!important}
+.ticker-wrap.teal-t,.ticker-wrap.dark-t,.ticker-wrap.ink-t{background:linear-gradient(135deg,#d7f6ef,#fff2c8,#ffc885)!important}
+.ticker-inner span{color:var(--ink)!important}
+
+.s-tag{background:rgba(255,255,255,.7)!important;border-color:rgba(8,121,102,.18)!important;box-shadow:0 8px 22px rgba(8,121,102,.06)}
+.s-tag.pink,.s-tag.teal,.s-tag.dark{color:var(--teal-deep)!important}
+.s-tag.gold{color:#9a6100!important}
+.s-sub,.hero-sub,.collab-quote,.myst-sub,.why-desc,.way-card-desc,.retailer-tag,.find-near p,.cd-sub,.scratch-header p,.fan-wall-inner p,.ritual-header p,.ritual-note,.proof-label,.cstat-lbl,.gs-label,.gs-sub,.foot-desc,.foot-by,.foot-bottom p,.rb-label,.rb-live-txt,.fan-card-quote,.fan-platform,.quiz-hint,.q-cnt,.res-aff,.rc-lbl,.flav-mood,.tk-sub,.sp-sub,.ct-detail,.ing-card-desc,.cd-colon-lbl{color:var(--ink-mid)!important}
+.hero-sub strong,.hero-collab-lock,.hero-collab-lock strong,.tg2,.ch2,.mb2,.s-title.white,.collab-brand-name,.collab-tagline-big,.way-col-name,.way-card-title,.retailer-name,.sri-offer,.sri-offer strong,.sri-name,.foot-col h4,.foot-col a,.foot-links a,.soc-btn,.fan-handle,.ritual-act,.way-card-num,.post-tag,.hashtag,.scratch-label-top,.flav-star,.pl-name,.tk-tag,.sp-title,.ct-event,.ing-card-name,.rb-emoji-btn{color:var(--ink)!important}
+.s-title.pink-grd,.s-title.gold-grd,.s-title.teal-grd,#three-ways .s-title.white,#glow-stats .s-title.white,#quiz .s-title,#community .s-title,#fan-wall .s-title,#daily-ritual .s-title,.cd-headline,.res-hl,.proof-num{background:linear-gradient(120deg,var(--teal-deep),var(--teal),var(--gold),var(--orange))!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+.mb1{color:var(--teal-deep)!important;text-shadow:none!important}
+.mb3,.ch1,.ch3,.cstat-num,.gs-num{background:linear-gradient(120deg,var(--teal),var(--gold),var(--orange))!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+
+.hero-badge,.hpill,.carousel-arrow,.collab-card,.collab-stat,.myst-reveal-box,.lyric-item,.way-col-head,.way-card,.quiz-card,.wcard,.retailer-card,.fan-card,.teen-card,.gs-item,.sp-card,.ct-card,.ing-card,.tiktok-box,.sp-box,.pl-item,.shake-result,.ex-panel,.well-card{background:rgba(255,255,255,.68)!important;border-color:rgba(8,121,102,.16)!important;box-shadow:0 18px 44px rgba(8,121,102,.09)!important}
+.hero-badge,.hpill,.carousel-arrow,.carousel-swipe-hint,.scroll-ind,.lyric-t,.myst-note,.way-col-tag,.flav-tag,.flav-mood,.rb-emoji-btn,.foot-ticker-inner span{color:var(--ink-mid)!important}
+.hero-badge,.hpill,.s-tag,.fan-card,.wcard,.way-card,.retailer-card,.quiz-card,.gs-item{animation:softPanelFloat 7s ease-in-out infinite alternate}
+.hpill:nth-child(2),.wcard:nth-child(2),.way-card:nth-child(2),.retailer-card:nth-child(2),.fan-card:nth-child(2){animation-delay:1.2s}
+.hpill:nth-child(3),.wcard:nth-child(3),.way-card:nth-child(3),.retailer-card:nth-child(3),.fan-card:nth-child(3){animation-delay:2.4s}
+@keyframes softPanelFloat{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+.hero-billboard{background:linear-gradient(135deg,rgba(8,121,102,.1),rgba(242,184,76,.12),rgba(238,128,34,.1))!important;-webkit-background-clip:text!important;background-clip:text!important}
+.hero-fizzo-logo{background:linear-gradient(135deg,var(--teal-deep),var(--teal),var(--gold),var(--orange))!important;filter:drop-shadow(0 14px 28px rgba(8,121,102,.16))!important}
+.hero-dots-pattern{background-image:radial-gradient(rgba(8,121,102,.16) 1.5px,transparent 1.5px)!important}
+.b1{background:radial-gradient(circle,rgba(32,169,143,.2),transparent 68%)!important}
+.b2{background:radial-gradient(circle,rgba(242,184,76,.18),transparent 68%)!important}
+.b3{background:radial-gradient(circle,rgba(238,128,34,.13),transparent 68%)!important}
+.hero-can-slide.active{filter:blur(0) drop-shadow(0 38px 70px rgba(8,121,102,.22))!important}
+.float-fruit{filter:drop-shadow(0 6px 14px rgba(8,121,102,.18))!important}
+
+.flav-card.tang .flav-bg{background:linear-gradient(145deg,#fff0c8,#ffc36a,#f29b47)!important}
+.flav-card.lime .flav-bg{background:linear-gradient(145deg,#f4ffe8,#d7e7a4,#a8c65f)!important}
+.flav-card.guava .flav-bg{background:linear-gradient(145deg,#effff8,#aee6d9,#69b9a8)!important}
+.flav-card .flav-grad{background:linear-gradient(to top,rgba(255,253,248,.94),rgba(255,253,248,.58) 60%,rgba(255,253,248,.05))!important}
+.flav-content{background:rgba(255,255,255,.68)!important;color:var(--ink)!important;box-shadow:0 14px 35px rgba(8,121,102,.1)!important}
+.flav-name{color:var(--ink)!important;text-shadow:none!important}
+.flav-btn{background:rgba(255,255,255,.8)!important;color:var(--teal-deep)!important;border-color:rgba(8,121,102,.25)!important}
+
+.myst-reveal-box span[style*="rgba(255,255,255"],.myst-reveal-box div[style*="border-bottom"]{color:var(--ink-mid)!important;border-color:rgba(8,121,102,.14)!important}
+.lyric-item:hover .lyric-t{color:var(--ink)!important}
+.post-overlay{background:rgba(255,250,235,.84)!important}
+.pol-sub{color:var(--ink-mid)!important}
+.retailer-card::before{background:linear-gradient(135deg,rgba(32,169,143,.1),rgba(242,184,76,.12))!important}
+.scratch-wrap:nth-child(1) .scratch-card{background:linear-gradient(145deg,#fff2cf,#ffc36a,#f6a25e)!important}
+.scratch-wrap:nth-child(2) .scratch-card{background:linear-gradient(145deg,#f0fff4,#bfead6,#72c1a7)!important}
+.scratch-wrap:nth-child(3) .scratch-card{background:linear-gradient(145deg,#effff8,#aee6d9,#ffd59d)!important}
+.scratch-card{border-color:rgba(8,121,102,.18)!important;box-shadow:0 20px 44px rgba(8,121,102,.12)}
+.sri-badge,.scratch-hint,.scratch-done-msg{color:var(--ink)!important}
+.rb-emoji-btn{background:rgba(255,255,255,.76)!important;border-color:rgba(8,121,102,.16)!important;color:var(--ink-mid)!important}
+.rb-emoji-btn span.cnt{color:var(--teal-deep)!important}
+.foot-ticker{border-bottom-color:rgba(8,121,102,.12)!important}
+.foot-bottom{border-top-color:rgba(8,121,102,.12)!important}
+.soc-btn{background:rgba(255,255,255,.64)!important;border-color:rgba(8,121,102,.18)!important}
+.soc-btn:hover{background:var(--teal)!important;color:#fff!important}
+.foot-orb1{background:rgba(32,169,143,.18)!important}
+.foot-orb2{background:rgba(238,128,34,.16)!important}
+
+/* === INSTAGRAM COMMUNITY HUB === */
+#community{background:linear-gradient(135deg,#fff6df 0%,#eafff7 40%,#ffd4a0 100%)!important;overflow:hidden}
+#community .comm-feed{display:none!important}
+.community-brand-row{display:flex;align-items:center;justify-content:center;gap:.7rem;flex-wrap:wrap;margin-top:1rem;color:var(--ink-mid);font-family:'DM Sans',sans-serif;font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:.78rem}
+.tropicana-wordmark{display:inline-flex;align-items:center;justify-content:center;font-family:'Clash Display','Impact',sans-serif;font-weight:800;color:#178839;letter-spacing:-.02em;line-height:1;position:relative}
+.tropicana-wordmark::after{content:'';position:absolute;left:5%;right:3%;bottom:-.18em;height:2px;background:#178839;border-radius:50%;transform:skewX(-18deg)}
+.insta-feed{max-width:1320px;margin:3.2rem auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;position:relative;z-index:2}
+.insta-card{min-height:330px;border-radius:1.35rem;background:#fff;border:1px solid rgba(8,121,102,.16);box-shadow:0 22px 46px rgba(8,121,102,.1);overflow:hidden;position:relative;display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s;animation:instaFloat 7s ease-in-out infinite alternate}
+.insta-card:nth-child(2){animation-delay:.8s}.insta-card:nth-child(3){animation-delay:1.6s}.insta-card:nth-child(4){animation-delay:2.4s}.insta-card:nth-child(5){animation-delay:3.2s}.insta-card:nth-child(6){animation-delay:4s}.insta-card:nth-child(7){animation-delay:4.8s}
+@keyframes instaFloat{from{transform:translateY(0)}to{transform:translateY(-8px)}}
+.insta-card:hover{transform:translateY(-12px) rotate(.5deg);box-shadow:0 34px 76px rgba(238,128,34,.18)}
+.insta-top{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 .9rem;border-bottom:1px solid rgba(8,121,102,.08);font-family:'DM Sans',sans-serif;color:var(--ink);font-weight:900;font-size:.78rem}
+.insta-avatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--gold),var(--orange));display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.72rem;margin-right:.45rem}
+.insta-user{display:flex;align-items:center}.insta-menu{letter-spacing:.12em;color:var(--ink-mid)}
+.insta-art{flex:1;position:relative;display:flex;align-items:center;justify-content:center;min-height:230px;overflow:hidden}
+.insta-actions{display:flex;align-items:center;gap:.55rem;padding:.75rem .9rem .35rem;color:var(--ink);font-weight:900}
+.insta-actions span{animation:heartBeat 2.4s ease-in-out infinite}
+@keyframes heartBeat{50%{transform:scale(1.18)}}
+.insta-caption{padding:0 .9rem 1rem;font-family:'DM Sans',sans-serif;color:var(--ink-mid);font-size:.78rem;line-height:1.5}
+.insta-caption b{color:var(--ink)}
+.hash-row{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.55rem}
+.hash-row span{display:inline-flex;border-radius:999px;background:rgba(32,169,143,.1);border:1px solid rgba(8,121,102,.14);padding:.2rem .5rem;color:var(--teal-deep);font-size:.66rem;font-weight:900}
+.post-type{background:#fff}
+.post-type .insta-art{padding:1.5rem;text-align:center}
+.post-copy{font-family:'Clash Display','Impact',sans-serif;font-size:clamp(2.1rem,3.7vw,3.8rem);line-height:.92;font-weight:800;color:#3f8a2b;letter-spacing:0;animation:copyPop 3.2s ease-in-out infinite}
+@keyframes copyPop{50%{transform:scale(1.035)}}
+.brand-stack{display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.brand-stack .tropicana-wordmark{font-size:2.3rem}
+.brand-stack .fizzo-word{font-family:'Clash Display','Impact',sans-serif;font-size:4rem;line-height:.85;color:#2f8d3b;font-weight:800}
+.brand-sign{font-family:'DM Sans',sans-serif;color:rgba(13,41,35,.45);font-style:italic;align-self:flex-end;margin-right:1.5rem}
+.splash-card.guava{background:linear-gradient(145deg,#aee6d9,#ffb3bd)}
+.splash-card.tang{background:linear-gradient(145deg,#ffb35f,#ffe0a6)}
+.splash-card.lime{background:linear-gradient(145deg,#d7e96d,#eaffc0)}
+.splash-card .insta-art::before{content:'';position:absolute;inset:18% -15%;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.9),transparent 15%),repeating-radial-gradient(circle at 50% 50%,rgba(255,255,255,.38) 0 4px,transparent 5px 20px);transform:rotate(-12deg);animation:splashSpin 16s linear infinite}
+@keyframes splashSpin{to{transform:rotate(348deg)}}
+.insta-can{position:relative;z-index:2;width:42%;max-height:230px;object-fit:contain;filter:drop-shadow(0 28px 30px rgba(8,47,39,.28));animation:canPostFloat 4.5s ease-in-out infinite}
+@keyframes canPostFloat{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-12px) rotate(8deg)}}
+.fruit-chip{position:absolute;z-index:3;width:70px;height:70px;border-radius:50%;bottom:16%;right:20%;background:radial-gradient(circle,#fff8c8 0 18%,var(--fruit,#ee8022) 19% 100%);border:4px solid rgba(255,255,255,.8);box-shadow:0 16px 26px rgba(8,47,39,.15);animation:merchSpin 11s linear infinite}
+.lizzo-card{grid-column:span 2;background:#ff6f33}
+.lizzo-card .insta-art{min-height:420px;background:linear-gradient(145deg,#ff7842,#f15f2d)}
+.lizzo-photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(1.05) contrast(1.05)}
+.lizzo-card .insta-art::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,18,.72),rgba(10,20,18,.08) 55%,rgba(255,111,51,.08))}
+.lizzo-lockup{position:absolute;z-index:2;left:1.3rem;right:1.3rem;bottom:1.2rem;color:#fff}
+.lizzo-lockup b{font-family:'Clash Display','Impact',sans-serif;font-size:clamp(2.6rem,6vw,5.6rem);line-height:.82;display:block;color:#111}
+.lizzo-lockup span{font-family:'DM Sans',sans-serif;font-size:1.2rem;letter-spacing:.1em;text-transform:uppercase;color:#fff}
+.photo-credit{position:absolute;right:.8rem;bottom:.6rem;z-index:3;color:rgba(255,255,255,.74);font-size:.58rem;font-family:'DM Sans',sans-serif;text-decoration:none}
+.insta-cta-strip{max-width:920px;margin:2.4rem auto 0;display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap}
+.insta-cta-strip .hashtag{background:rgba(255,255,255,.76);border-color:rgba(8,121,102,.16)}
+.collab-photo-strip{position:relative;width:100%;height:190px;border-radius:1.25rem;overflow:hidden;margin:.2rem 0 .4rem;background:linear-gradient(135deg,#ff7842,#ffd09a);box-shadow:0 18px 36px rgba(8,47,39,.12)}
+.collab-photo-strip img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(1.08)}
+.collab-photo-strip::after{content:'GOOD AS HELL';position:absolute;left:1rem;bottom:.85rem;font-family:'Clash Display','Impact',sans-serif;font-size:1.5rem;color:#fff;letter-spacing:.04em;text-shadow:0 6px 22px rgba(0,0,0,.35)}
+.collab-photo-strip .photo-credit{font-size:.52rem}
+.collab-tropicana{font-size:1.1rem;margin-right:.2rem}
+
+@media(max-width:1000px){
+  .insta-feed{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:580px){
+  .insta-feed{grid-template-columns:1fr}
+  .lizzo-card{grid-column:auto}
+}
+
+/* === MERCH SHOP SECTION === */
+#merch{background:linear-gradient(135deg,#fffaf0 0%,#e9fff7 35%,#ffe6b4 68%,#ffd09a 100%);padding:7rem 5%;position:relative;overflow:hidden}
+#merch::before{content:'FIZZO MERCH';position:absolute;left:-3vw;right:-3vw;top:8%;font-family:'Clash Display','Impact',sans-serif;font-size:clamp(5rem,14vw,14rem);font-weight:700;letter-spacing:0;color:rgba(8,47,39,.045);white-space:nowrap;pointer-events:none;animation:merchMarquee 18s linear infinite}
+@keyframes merchMarquee{from{transform:translateX(0)}to{transform:translateX(-18%)}}
+.merch-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;animation:ecoDrift 14s ease-in-out infinite alternate}
+.merch-orb.one{width:360px;height:360px;background:rgba(32,169,143,.18);top:-90px;right:8%}
+.merch-orb.two{width:320px;height:320px;background:rgba(238,128,34,.16);bottom:-120px;left:4%;animation-delay:2s}
+.merch-inner{max-width:1400px;margin:0 auto;position:relative;z-index:2}
+.merch-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:3rem}
+.merch-title{font-family:'Clash Display','Impact',sans-serif;font-size:clamp(2.6rem,5.8vw,6rem);line-height:.92;letter-spacing:0;font-weight:700;background:linear-gradient(120deg,#082f27,var(--teal),var(--gold),var(--orange));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin:.9rem 0 0}
+.merch-copy{max-width:420px;color:var(--ink-mid);font-family:'DM Sans',sans-serif;line-height:1.7;font-size:1rem}
+.merch-grid{display:grid;grid-template-columns:1.2fr 1.2fr .86fr .86fr .86fr;gap:1rem;align-items:stretch}
+.merch-card{min-height:420px;background:rgba(255,255,255,.74);border:1px solid rgba(8,121,102,.18);border-radius:1.4rem;padding:1.2rem;position:relative;overflow:hidden;box-shadow:0 22px 48px rgba(8,121,102,.1);display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s,box-shadow .35s,border-color .35s;animation:merchFloat 6s ease-in-out infinite alternate}
+.merch-card:nth-child(2){animation-delay:1s}.merch-card:nth-child(3){animation-delay:1.7s}.merch-card:nth-child(4){animation-delay:2.4s}.merch-card:nth-child(5){animation-delay:3.1s}
+@keyframes merchFloat{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+.merch-card:hover{transform:translateY(-10px) rotate(.6deg);border-color:rgba(238,128,34,.35);box-shadow:0 32px 70px rgba(238,128,34,.18)}
+.merch-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(255,255,255,.8),transparent 40%),radial-gradient(circle at 85% 20%,rgba(32,169,143,.14),transparent 42%);pointer-events:none}
+.merch-visual{position:relative;min-height:300px;border-radius:1rem;background:linear-gradient(145deg,rgba(255,255,255,.68),rgba(255,245,222,.62));display:flex;align-items:center;justify-content:center;overflow:hidden}
+.merch-visual::after{content:'';position:absolute;inset:auto 8% 8% 8%;height:14px;border-radius:50%;background:rgba(8,47,39,.12);filter:blur(8px)}
+.merch-info{position:relative;z-index:2;padding:.95rem .2rem .1rem}
+.merch-kicker{font-family:'DM Sans',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--teal-deep);margin-bottom:.25rem}
+.merch-name{font-family:'Clash Display','Impact',sans-serif;font-size:1.25rem;letter-spacing:.02em;color:var(--ink);font-weight:700}
+.merch-meta{display:flex;align-items:center;justify-content:space-between;gap:.8rem;margin-top:.8rem;font-family:'DM Sans',sans-serif}
+.merch-price{font-size:.9rem;font-weight:900;color:var(--ink)}
+.merch-pill{border:1px solid rgba(8,121,102,.18);background:rgba(255,255,255,.72);border-radius:999px;padding:.35rem .8rem;color:var(--ink-mid);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.merch-spark{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--orange);box-shadow:0 0 18px rgba(238,128,34,.5);animation:ecoStream 5s linear infinite}
+.merch-spark.s1{left:10%;bottom:20%;animation-delay:.3s}.merch-spark.s2{right:14%;top:22%;background:var(--teal);animation-delay:1.6s}.merch-spark.s3{right:26%;bottom:14%;background:var(--gold);animation-delay:2.7s}
+.tee-mock{position:relative;width:78%;max-width:330px;aspect-ratio:.86;background:#111;border-radius:1.2rem 1.2rem .7rem .7rem;box-shadow:inset 0 18px 24px rgba(255,255,255,.08),inset 0 -28px 34px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;transform:rotate(-1.5deg)}
+.tee-mock::before,.tee-mock::after{content:'';position:absolute;top:18%;width:28%;height:42%;background:inherit;border-radius:.9rem;z-index:-1}
+.tee-mock::before{left:-19%;transform:rotate(17deg)}.tee-mock::after{right:-19%;transform:rotate(-17deg)}
+.tee-neck{position:absolute;top:-1px;left:50%;width:34%;height:18%;transform:translateX(-50%);background:rgba(255,255,255,.08);border-radius:0 0 999px 999px;border:8px solid rgba(0,0,0,.18);border-top:none}
+.tee-print{position:relative;z-index:2;text-align:left;width:78%;font-family:'Clash Display','Impact',sans-serif;color:#fff}
+.tee-mini{font-family:'DM Sans',sans-serif;font-size:.52rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;margin-bottom:.7rem}
+.tee-big{font-size:clamp(2.5rem,5vw,5.4rem);line-height:.78;font-weight:700;letter-spacing:0}
+.tee-citrus{width:46%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#ffc96a 0 13%,#f59a26 14% 20%,#ffcf75 21% 28%,#f58a20 29% 34%,#ffcf75 35% 44%,#ef7d20 45% 100%);border:5px solid #ffd38a;margin:.8rem auto 0;box-shadow:0 0 0 4px rgba(255,255,255,.08);animation:merchSpin 12s linear infinite}
+@keyframes merchSpin{to{transform:rotate(360deg)}}
+.tee-white{background:#f7efe3;color:var(--ink);box-shadow:inset 0 18px 24px rgba(255,255,255,.8),inset 0 -18px 24px rgba(8,47,39,.06)}
+.tee-white .tee-neck{background:#f0e7da;border-color:rgba(8,47,39,.08)}
+.tee-white .tee-print{color:var(--ink);text-align:left}
+.tee-logo{font-size:clamp(2.3rem,4vw,4rem);line-height:.85;color:var(--teal);letter-spacing:.02em}
+.tee-grid-print{display:grid;grid-template-columns:.9fr 1fr;gap:.5rem;align-items:center;margin-top:.8rem}
+.fruit-stack{display:grid;grid-template-rows:repeat(3,1fr);height:150px;border-radius:.25rem;overflow:hidden}
+.fruit-stack span:nth-child(1){background:#f39a27}.fruit-stack span:nth-child(2){background:#e97983}.fruit-stack span:nth-child(3){background:#a8c84a}
+.tee-flavors{font-size:1rem;line-height:1.05;font-weight:700;color:var(--orange)}
+.tee-flavors b{display:block;color:var(--teal);margin-top:.35rem}
+.bottle-mock{position:relative;width:108px;height:310px;border-radius:56px 56px 34px 34px;background:var(--bottle,#ee8022);box-shadow:inset 14px 0 20px rgba(255,255,255,.28),inset -14px 0 24px rgba(0,0,0,.12),0 24px 34px rgba(8,47,39,.18);animation:bottleBob 4.4s ease-in-out infinite}
+@keyframes bottleBob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1.4deg)}}
+.bottle-mock::before{content:'';position:absolute;top:-48px;left:27px;width:54px;height:58px;border:12px solid var(--bottle,#ee8022);border-bottom:none;border-radius:32px 32px 0 0}
+.bottle-cap{position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:86px;height:34px;border-radius:16px 16px 10px 10px;background:var(--cap,var(--bottle,#ee8022));box-shadow:inset 0 6px 10px rgba(255,255,255,.24),0 4px 0 rgba(8,47,39,.22)}
+.bottle-logo{position:absolute;left:15px;top:68px;writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Clash Display','Impact',sans-serif;font-size:2.3rem;font-weight:700;color:rgba(255,255,255,.92);letter-spacing:.02em}
+.bottle-flavor{position:absolute;right:18px;top:108px;writing-mode:vertical-rl;transform:rotate(180deg);font-family:'DM Sans',sans-serif;font-size:.58rem;font-weight:900;color:rgba(0,0,0,.58);text-transform:uppercase;letter-spacing:.04em}
+.bottle-wave{position:absolute;left:50%;bottom:42px;width:66px;height:24px;transform:translateX(-50%);background:repeating-linear-gradient(90deg,transparent 0 5px,rgba(255,255,255,.85) 5px 7px,transparent 7px 11px);opacity:.8;clip-path:polygon(0 48%,8% 35%,16% 60%,24% 28%,32% 65%,40% 40%,48% 58%,56% 33%,64% 62%,72% 44%,80% 56%,88% 38%,100% 50%,100% 100%,0 100%)}
+.bottle-word{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-family:'DM Sans',sans-serif;font-size:.7rem;letter-spacing:.18em;color:rgba(255,255,255,.85);font-weight:900}
+.bottle-orange{--bottle:#ee8022;--cap:#f28a25}.bottle-pink{--bottle:#e8899d;--cap:#ee9aac}.bottle-lime{--bottle:#a7cd36;--cap:#8eb526}
+
+@media(max-width:1100px){
+  .merch-grid{grid-template-columns:repeat(2,1fr)}
+  .merch-card.bottle-card{min-height:390px}
+}
+@media(max-width:700px){
+  .merch-head{display:block}
+  .merch-grid{grid-template-columns:1fr}
+  .merch-card{min-height:380px}
+  .tee-mock{width:68%}
+}
+
+/* === ECO-FRIENDLY CAN SECTION === */
+#eco-can{background:linear-gradient(135deg,#f3fff8 0%,#d7f5e9 42%,#fff0bd 72%,#ffc985 100%);padding:7rem 5%;position:relative;overflow:hidden}
+#eco-can::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(8,121,102,.15) 1px,transparent 1px);background-size:34px 34px;opacity:.55;pointer-events:none}
+.eco-orb{position:absolute;border-radius:50%;filter:blur(75px);pointer-events:none;animation:ecoDrift 13s ease-in-out infinite alternate}
+.eco-orb.one{width:360px;height:360px;background:rgba(32,169,143,.2);top:-120px;left:-80px}
+.eco-orb.two{width:300px;height:300px;background:rgba(242,184,76,.2);right:-70px;bottom:10%;animation-delay:2s}
+.eco-orb.three{width:220px;height:220px;background:rgba(238,128,34,.16);left:42%;bottom:-90px;animation-delay:4s}
+@keyframes ecoDrift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(46px,-34px,0) scale(1.12)}}
+.eco-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.02fr .98fr;gap:4rem;align-items:center;position:relative;z-index:2}
+.eco-copy{max-width:590px}
+.eco-title{font-family:'Clash Display','Impact',sans-serif;font-size:clamp(2.5rem,5.6vw,6.4rem);line-height:.92;letter-spacing:0;font-weight:700;margin:1rem 0;background:linear-gradient(120deg,var(--teal-deep),var(--teal),var(--gold),var(--orange));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.eco-sub{font-size:1.05rem;line-height:1.75;color:var(--ink-mid);font-family:'DM Sans',sans-serif;max-width:520px}
+.eco-points{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0}
+.eco-point{background:rgba(255,255,255,.72);border:1px solid rgba(8,121,102,.18);border-radius:1.1rem;padding:1.2rem;box-shadow:0 18px 36px rgba(8,121,102,.08);position:relative;overflow:hidden;animation:ecoCardRise 7s ease-in-out infinite alternate}
+.eco-point:nth-child(2){animation-delay:1s}.eco-point:nth-child(3){animation-delay:2s}.eco-point:nth-child(4){animation-delay:3s}
+@keyframes ecoCardRise{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+.eco-point::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold),var(--orange));transform:scaleX(.25);transform-origin:left;transition:transform .35s}
+.eco-point:hover::after{transform:scaleX(1)}
+.eco-k{font-family:'Clash Display','Impact',sans-serif;font-size:1.55rem;color:var(--teal-deep);font-weight:700;margin-bottom:.2rem}
+.eco-label{font-size:.78rem;line-height:1.5;color:var(--ink-mid);font-family:'DM Sans',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.eco-loop{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.eco-chip{position:relative;display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.76);border:1px solid rgba(8,121,102,.18);color:var(--ink);border-radius:999px;padding:.55rem 1rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 10px 22px rgba(8,121,102,.07)}
+.eco-chip::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px rgba(32,169,143,.14);animation:ecoPulse 1.8s ease-in-out infinite}
+@keyframes ecoPulse{50%{transform:scale(1.45);opacity:.55}}
+.eco-visual{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center}
+.eco-rings{position:absolute;width:min(520px,90vw);aspect-ratio:1;border-radius:50%;border:1px solid rgba(8,121,102,.18);animation:ecoSpin 18s linear infinite}
+.eco-rings::before,.eco-rings::after{content:'';position:absolute;border-radius:50%;inset:10%;border:1px dashed rgba(238,128,34,.28)}
+.eco-rings::after{inset:23%;border-color:rgba(32,169,143,.32);animation:ecoSpin 10s linear infinite reverse}
+@keyframes ecoSpin{to{transform:rotate(360deg)}}
+.eco-can-wrap{position:relative;width:210px;height:430px;animation:ecoCanFloat 4.8s ease-in-out infinite;filter:drop-shadow(0 36px 54px rgba(8,121,102,.2))}
+.eco-can-wrap img{width:100%;height:100%;object-fit:contain}
+@keyframes ecoCanFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-18px) rotate(2deg)}}
+.eco-badge{position:absolute;background:rgba(255,255,255,.82);border:1px solid rgba(8,121,102,.2);border-radius:1rem;padding:.8rem 1rem;box-shadow:0 18px 36px rgba(8,121,102,.12);font-family:'DM Sans',sans-serif;color:var(--ink);font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:.72rem;animation:ecoBadgeFloat 5s ease-in-out infinite alternate}
+.eco-badge b{display:block;font-family:'Clash Display','Impact',sans-serif;font-size:1.3rem;color:var(--teal-deep);margin-bottom:.1rem}
+.eco-badge.a{top:9%;left:4%}.eco-badge.b{top:20%;right:0;animation-delay:1.2s}.eco-badge.c{bottom:12%;left:1%;animation-delay:2.1s}.eco-badge.d{bottom:5%;right:8%;animation-delay:3s}
+@keyframes ecoBadgeFloat{from{transform:translateY(0)}to{transform:translateY(-12px)}}
+.eco-stream{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.55;animation:ecoStream 6s linear infinite}
+.eco-stream.s1{top:16%;left:22%;animation-delay:.2s}.eco-stream.s2{top:62%;right:14%;background:var(--gold);animation-delay:1.5s}.eco-stream.s3{bottom:18%;left:36%;background:var(--orange);animation-delay:2.4s}.eco-stream.s4{top:38%;right:30%;animation-delay:3.5s}
+@keyframes ecoStream{0%{transform:translateY(30px) scale(.5);opacity:0}20%,75%{opacity:.65}100%{transform:translateY(-120px) scale(1.25);opacity:0}}
+
+@media(max-width:900px){
+  .eco-inner{grid-template-columns:1fr;gap:2rem}
+  .eco-visual{min-height:500px}
+  .eco-points{grid-template-columns:1fr 1fr}
+}
+@media(max-width:580px){
+  .eco-points{grid-template-columns:1fr}
+  .eco-badge{position:relative;inset:auto!important;margin:.4rem}
+  .eco-visual{min-height:auto;flex-direction:column;padding:2rem 0}
+  .eco-rings{width:330px}
+}
+
+@media(max-width:580px){
+  .hero-badge,.hpill{background:rgba(255,255,255,.82)!important}
+}
 </style>
 </head>
 <body>
@@ -889,7 +1214,8 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
     <li><a href="#flavors">Flavours</a></li>
     <li><a href="#mystery">The Drop</a></li>
     <li><a href="#quiz">Quiz</a></li>
-    <li><a href="#wellness">Wellness</a></li>
+    <li><a href="#merch">Merch</a></li>
+    <li><a href="#eco-can">Eco Can</a></li>
   </ul>
   <button class="nav-cta magnetic" onclick="smoothTo('quiz')">Take the Quiz</button>
 </nav>
@@ -1001,9 +1327,14 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
     <div class="collab-visual reveal sd2">
       <div class="collab-card">
         <div class="collab-logo-row">
+          <div class="collab-tropicana tropicana-wordmark">Tropicana</div>
           <div class="collab-brand-name"><span class="inline-logo" style="width:2.5em; height:1em; background-color: var(--white);"></span></div>
           <div class="collab-x">×</div>
           <div class="collab-artist-name">LIZZO</div>
+        </div>
+        <div class="collab-photo-strip">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/2018_Lizzo_%2844617724361%29_%28cropped%29.jpg" alt="Lizzo">
+          <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:2018_Lizzo_(44617724361)_(cropped).jpg">Photo: David Lee / CC BY-SA 2.0</a>
         </div>
         <div class="collab-tagline-big">100% THAT SIP</div>
         <div class="collab-stats">
@@ -1299,6 +1630,69 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
     <div class="s-tag gold">💛 The Movement</div>
     <h2 class="s-title" style="color:var(--ink)">COMMUNITY HUB</h2>
     <p class="s-sub ink">You're not a customer. You're the campaign. #FizzoMovement</p>
+    <div class="community-brand-row">Powered by <span class="tropicana-wordmark">Tropicana</span> × <span class="inline-logo" style="width:3.2em;height:1em"></span> × Lizzo</div>
+  </div>
+  <div class="insta-feed reveal sd2">
+    <article class="insta-card post-type">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">FZ</span>@fizzo</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art"><div class="post-copy">NEED<br>SOMETHING<br>MORE<br>EXCITING?</div></div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@fizzo</b> Your juice era just got louder.<div class="hash-row"><span>#NeedMoreFizz</span><span>#FizzoMovement</span><span>#PostbioticEra</span></div></div>
+    </article>
+    <article class="insta-card post-type">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">TR</span>@tropicana</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art">
+        <div class="brand-stack">
+          <div class="tropicana-wordmark">Tropicana</div>
+          <div class="fizzo-word">FIZZO</div>
+          <div class="brand-sign">Lizzo</div>
+        </div>
+      </div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@tropicana</b> Tropicana freshness, Fizzo fizz, Lizzo energy.<div class="hash-row"><span>#TropicanaFizzo</span><span>#LizzoXFizzo</span><span>#ThatSip</span></div></div>
+    </article>
+    <article class="insta-card post-type">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">💚</span>@fizzo</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art"><div class="post-copy">IT IS<br>100%<br>THAT SIP</div></div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@fizzo</b> No explanation. Just the line.<div class="hash-row"><span>#100PercentThatSip</span><span>#GoodAsHellInsideOut</span></div></div>
+    </article>
+    <article class="insta-card splash-card guava">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">GV</span>@fizzo</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art"><img class="insta-can" src="can-guava.png" alt="Good As Hell Guava can"><span class="fruit-chip" style="--fruit:#f1717f"></span></div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@fizzo</b> Good As Hell Guava, straight from the splash zone.<div class="hash-row"><span>#GoodAsHellGuava</span><span>#LizzoPick</span><span>#GuavaGlow</span></div></div>
+    </article>
+    <article class="insta-card splash-card tang">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">TG</span>@fizzo</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art"><img class="insta-can" src="can-tangerine.png" alt="Truth Hurts Tangerine can"><span class="fruit-chip" style="--fruit:#ee8022"></span></div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@fizzo</b> Truth Hurts Tangerine with ice-cold main character energy.<div class="hash-row"><span>#TruthHurtsTangerine</span><span>#CitrusDrop</span><span>#ThatSip</span></div></div>
+    </article>
+    <article class="insta-card splash-card lime">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">LM</span>@fizzo</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art"><img class="insta-can" src="can-lime.png" alt="About Damn Lime can"><span class="fruit-chip" style="--fruit:#9fc441"></span></div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@fizzo</b> About Damn Lime, fresh enough to wake the whole feed.<div class="hash-row"><span>#AboutDamnLime</span><span>#LimeTime</span><span>#FizzoMovement</span></div></div>
+    </article>
+    <article class="insta-card lizzo-card">
+      <div class="insta-top"><div class="insta-user"><span class="insta-avatar">LZ</span>@lizzobeeating</div><div class="insta-menu">•••</div></div>
+      <div class="insta-art">
+        <img class="lizzo-photo-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/2018_Lizzo_%2844617724361%29_%28cropped%29.jpg" alt="Lizzo">
+        <div class="lizzo-lockup"><b>LIZZO</b><span>Good As Hell Energy</span></div>
+        <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:2018_Lizzo_(44617724361)_(cropped).jpg">Photo: David Lee / CC BY-SA 2.0</a>
+      </div>
+      <div class="insta-actions"><span>♡</span><span>◎</span><span>↗</span></div>
+      <div class="insta-caption"><b>@fizzo</b> Lizzo energy belongs right next to the collab drop.<div class="hash-row"><span>#LizzoXFizzo</span><span>#GoodAsHell</span><span>#MadeForEveryBody</span></div></div>
+    </article>
+  </div>
+  <div class="insta-cta-strip reveal sd3">
+    <span class="hashtag">#100PercentThatSip</span>
+    <span class="hashtag">#TropicanaFizzo</span>
+    <span class="hashtag">#LizzoXFizzo</span>
+    <span class="hashtag">#GoodAsHellGuava</span>
+    <span class="hashtag">#TruthHurtsTangerine</span>
+    <span class="hashtag">#AboutDamnLime</span>
   </div>
   <div class="comm-feed reveal sd2">
     <div class="comm-post" style="background:rgba(43,175,154,.12)"><div class="post-in"><div class="post-emoji" style="animation-delay:0s">🍋✨</div><div class="post-tag" style="color:var(--teal-deep)">#AboutDamnLime</div></div><div class="post-overlay"><div class="pol-tag" style="color:var(--teal)">#GutGoodAsHell</div><div class="pol-sub">View post</div></div></div>
@@ -1601,6 +1995,161 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
   </div>
 </section>
 
+<!-- MERCH SHOP -->
+<section id="merch">
+  <div class="merch-orb one"></div>
+  <div class="merch-orb two"></div>
+  <div class="merch-inner">
+    <div class="merch-head reveal">
+      <div>
+        <div class="s-tag gold">Fizzo Merch Drop</div>
+        <h2 class="merch-title">WEAR THE SIP.<br>CARRY THE DROP.</h2>
+      </div>
+      <p class="merch-copy">A limited merch capsule inspired by the campaign graphics: bold tees, citrus print energy, and reusable bottles for every flavour mood.</p>
+    </div>
+    <div class="merch-grid reveal sd2">
+      <article class="merch-card">
+        <div class="merch-visual">
+          <span class="merch-spark s1"></span><span class="merch-spark s2"></span><span class="merch-spark s3"></span>
+          <div class="tee-mock">
+            <div class="tee-neck"></div>
+            <div class="tee-print">
+              <div class="tee-mini"><span>FIZZO</span><span>MADE FOR EVERY BODY</span></div>
+              <div class="tee-big">100%<br>THAT SIP</div>
+              <div class="tee-citrus"></div>
+            </div>
+          </div>
+        </div>
+        <div class="merch-info">
+          <div class="merch-kicker">Black Campaign Tee</div>
+          <div class="merch-name">100% That Sip Oversized Tee</div>
+          <div class="merch-meta"><span class="merch-price">Rs. 1,499</span><span class="merch-pill">Limited</span></div>
+        </div>
+      </article>
+      <article class="merch-card">
+        <div class="merch-visual">
+          <span class="merch-spark s1"></span><span class="merch-spark s2"></span><span class="merch-spark s3"></span>
+          <div class="tee-mock tee-white">
+            <div class="tee-neck"></div>
+            <div class="tee-print">
+              <div class="tee-logo">FIZZO</div>
+              <div class="tee-grid-print">
+                <div class="fruit-stack"><span></span><span></span><span></span></div>
+                <div class="tee-flavors">TRUTH HURTS TANGERINE<br>GOOD AS HELL GUAVA<b>ABOUT DAMN LIME</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="merch-info">
+          <div class="merch-kicker">White Flavour Tee</div>
+          <div class="merch-name">Fizzo Flavour Grid Tee</div>
+          <div class="merch-meta"><span class="merch-price">Rs. 1,399</span><span class="merch-pill">New</span></div>
+        </div>
+      </article>
+      <article class="merch-card bottle-card">
+        <div class="merch-visual">
+          <div class="bottle-mock bottle-orange">
+            <div class="bottle-cap"></div>
+            <div class="bottle-logo">FIZZO</div>
+            <div class="bottle-flavor">Truth Hurts Tangerine</div>
+            <div class="bottle-wave"></div>
+            <div class="bottle-word">FIZZO</div>
+          </div>
+        </div>
+        <div class="merch-info">
+          <div class="merch-kicker">Tangerine Bottle</div>
+          <div class="merch-name">Orange Steel Sipper</div>
+          <div class="merch-meta"><span class="merch-price">Rs. 999</span><span class="merch-pill">Hot</span></div>
+        </div>
+      </article>
+      <article class="merch-card bottle-card">
+        <div class="merch-visual">
+          <div class="bottle-mock bottle-pink">
+            <div class="bottle-cap"></div>
+            <div class="bottle-logo">FIZZO</div>
+            <div class="bottle-flavor">Good As Hell Guava</div>
+            <div class="bottle-wave"></div>
+            <div class="bottle-word">FIZZO</div>
+          </div>
+        </div>
+        <div class="merch-info">
+          <div class="merch-kicker">Guava Bottle</div>
+          <div class="merch-name">Pink Steel Sipper</div>
+          <div class="merch-meta"><span class="merch-price">Rs. 999</span><span class="merch-pill">Lizzo Pick</span></div>
+        </div>
+      </article>
+      <article class="merch-card bottle-card">
+        <div class="merch-visual">
+          <div class="bottle-mock bottle-lime">
+            <div class="bottle-cap"></div>
+            <div class="bottle-logo">FIZZO</div>
+            <div class="bottle-flavor">About Damn Lime</div>
+            <div class="bottle-wave"></div>
+            <div class="bottle-word">FIZZO</div>
+          </div>
+        </div>
+        <div class="merch-info">
+          <div class="merch-kicker">Lime Bottle</div>
+          <div class="merch-name">Green Steel Sipper</div>
+          <div class="merch-meta"><span class="merch-price">Rs. 999</span><span class="merch-pill">Fresh</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ECO-FRIENDLY CAN -->
+<section id="eco-can">
+  <div class="eco-orb one"></div>
+  <div class="eco-orb two"></div>
+  <div class="eco-orb three"></div>
+  <div class="eco-inner">
+    <div class="eco-copy reveal">
+      <div class="s-tag teal">Eco-Friendly Can</div>
+      <h2 class="eco-title">BUILT TO SIP.<br>MADE TO CIRCLE BACK.</h2>
+      <p class="eco-sub">The Fizzo can keeps the same bright energy with a lighter, recycle-ready aluminum shell, cleaner label choices, and a pack system designed to move with less waste.</p>
+      <div class="eco-points">
+        <div class="eco-point">
+          <div class="eco-k">75%</div>
+          <div class="eco-label">Recycled aluminum target for the can body</div>
+        </div>
+        <div class="eco-point">
+          <div class="eco-k">100%</div>
+          <div class="eco-label">Recyclable shell after your last sip</div>
+        </div>
+        <div class="eco-point">
+          <div class="eco-k">Light</div>
+          <div class="eco-label">Designed for lower transport weight</div>
+        </div>
+        <div class="eco-point">
+          <div class="eco-k">Clean</div>
+          <div class="eco-label">Water-based ink direction for future packs</div>
+        </div>
+      </div>
+      <div class="eco-loop">
+        <span class="eco-chip">Recycle-ready</span>
+        <span class="eco-chip">Less waste</span>
+        <span class="eco-chip">Lightweight pack</span>
+        <span class="eco-chip">Responsible sourcing</span>
+      </div>
+    </div>
+    <div class="eco-visual reveal sd2">
+      <div class="eco-rings"></div>
+      <span class="eco-stream s1"></span>
+      <span class="eco-stream s2"></span>
+      <span class="eco-stream s3"></span>
+      <span class="eco-stream s4"></span>
+      <div class="eco-badge a"><b>Loop</b>Recycle after sip</div>
+      <div class="eco-badge b"><b>Lite</b>Lower carry weight</div>
+      <div class="eco-badge c"><b>Pack</b>Less excess material</div>
+      <div class="eco-badge d"><b>Care</b>Planet-aware choices</div>
+      <div class="eco-can-wrap">
+        <img src="can-guava.png" alt="Fizzo eco-friendly recyclable can">
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TICKER 4 -->
 <div class="ticker-wrap dark-t">
   <div class="ticker-inner fast rev">
@@ -1641,7 +2190,7 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
       </div>
     </div>
     <div class="foot-col"><h4>Flavours</h4><ul><li><a href="#">Truth Hurts Tangerine</a></li><li><a href="#">About Damn Lime</a></li><li><a href="#">Good As Hell Guava</a></li></ul></div>
-    <div class="foot-col"><h4>Experience</h4><ul><li><a href="#">Pick Your Can Quiz</a></li><li><a href="#">Music Hub</a></li><li><a href="#">Wellness Lab</a></li><li><a href="#">Community</a></li><li><a href="#">Lizzo × Fizzo Collab</a></li></ul></div>
+    <div class="foot-col"><h4>Experience</h4><ul><li><a href="#quiz">Pick Your Can Quiz</a></li><li><a href="#flavors">Flavour Drop</a></li><li><a href="#merch">Merch Drop</a></li><li><a href="#eco-can">Eco Can</a></li><li><a href="#lizzo-collab">Lizzo × Fizzo Collab</a></li></ul></div>
     <div class="foot-col"><h4>Company</h4><ul><li><a href="#">About Fizzo</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Press</a></li><li><a href="#">Tropicana HQ</a></li><li><a href="#">Contact</a></li></ul></div>
   </div>
   <div class="foot-bottom">
@@ -1652,6 +2201,13 @@ footer{background:#030A08;padding:5rem 5% 2.5rem;position:relative;overflow:hidd
 
 <script>
 function smoothTo(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})}
+function settleHashScroll(){
+  if(!location.hash) return;
+  const el=document.querySelector(location.hash);
+  if(el) el.scrollIntoView({behavior:'auto',block:'start'});
+}
+window.addEventListener('load',()=>setTimeout(settleHashScroll,5400));
+window.addEventListener('hashchange',()=>setTimeout(settleHashScroll,80));
 
 /* CURSOR */
 const _hp=window.matchMedia('(pointer:fine)').matches;
@@ -1779,17 +2335,17 @@ document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
 (function(){
 const FLAVORS=[
   {id:'tangerine',name:'TRUTH HURTS TANGERINE',tag:'★ Truth Hurts Edition',img:'can-tangerine.png',
-   heroBg:'#2A1A08',blob1:'rgba(224,133,48,.3)',blob2:'rgba(240,168,85,.18)',blob3:'rgba(181,106,32,.15)',
+   heroBg:'linear-gradient(125deg,#fff2cf 0%,#ffc36a 45%,#f0fff8 100%)',blob1:'rgba(238,128,34,.22)',blob2:'rgba(255,195,106,.18)',blob3:'rgba(32,169,143,.12)',
    glowRgba:'rgba(224,133,48,',dotColor:'#E08530',
    cardGrad:'linear-gradient(145deg,#FFD4A0,#E08530,#B56A20,#6A3800)',
    accent:'#E08530',accentLight:'#F0A855',accentDark:'#B56A20',glowCss:'rgba(224,133,48,0.5)'},
   {id:'lime',name:'ABOUT DAMN LIME',tag:'★ Signature Drop',img:'can-lime.png',
-   heroBg:'#1A2210',blob1:'rgba(139,154,59,.3)',blob2:'rgba(181,196,98,.18)',blob3:'rgba(90,106,32,.15)',
+   heroBg:'linear-gradient(125deg,#f3ffe7 0%,#d7e7a4 42%,#fff1c9 100%)',blob1:'rgba(127,160,62,.22)',blob2:'rgba(215,231,164,.2)',blob3:'rgba(242,184,76,.14)',
    glowRgba:'rgba(139,154,59,',dotColor:'#8B9A3B',
    cardGrad:'linear-gradient(145deg,#D4E0A0,#8B9A3B,#5A6A20,#2A3A08)',
    accent:'#8B9A3B',accentLight:'#B5C462',accentDark:'#5A6A20',glowCss:'rgba(139,154,59,0.5)'},
   {id:'guava',name:'GOOD AS HELL GUAVA',tag:'★ Lizzo Pick · Fan Favourite',img:'can-guava.png',
-   heroBg:'#0A2018',blob1:'rgba(91,154,139,.3)',blob2:'rgba(130,187,168,.18)',blob3:'rgba(61,122,106,.15)',
+   heroBg:'linear-gradient(125deg,#f0fff8 0%,#aee6d9 45%,#ffd7a0 100%)',blob1:'rgba(74,169,151,.22)',blob2:'rgba(174,230,217,.2)',blob3:'rgba(238,128,34,.12)',
    glowRgba:'rgba(91,154,139,',dotColor:'#5B9A8B',
    cardGrad:'linear-gradient(145deg,#B0E0D0,#5B9A8B,#3D7A6A,#1A4A3A)',
    accent:'#5B9A8B',accentLight:'#8BBFB0',accentDark:'#3D7A6A',glowCss:'rgba(91,154,139,0.5)'}
