@@ -918,6 +918,10 @@ body::before{opacity:.45;mix-blend-mode:multiply}
 
 nav.scrolled{background:rgba(255,252,241,.94)!important;border-bottom:1px solid rgba(8,121,102,.18)!important;box-shadow:0 12px 38px rgba(8,121,102,.1)!important}
 .nav-fizzo,.foot-fizzo{background:linear-gradient(135deg,#082f27,var(--teal-deep),#6b7427)!important;filter:drop-shadow(0 8px 18px rgba(8,47,39,.14))}
+.nav-trop-logo{width:92px;height:auto;display:block;border:1px solid rgba(0,131,62,.35);border-radius:999px;padding:.24rem .7rem;background:rgba(255,255,255,.72);box-shadow:0 8px 18px rgba(0,131,62,.08)}
+.tropicana-inline-logo{display:inline-block;width:96px;height:auto;vertical-align:middle;margin:0 .25rem;filter:drop-shadow(0 5px 10px rgba(0,131,62,.08))}
+.collab-tropicana-logo{width:120px;height:auto;display:block;filter:drop-shadow(0 8px 16px rgba(0,131,62,.12))}
+.footer-tropicana-logo{width:104px;height:auto;vertical-align:middle;margin:.15rem .3rem 0;filter:drop-shadow(0 4px 8px rgba(0,131,62,.08))}
 .inline-logo{background:linear-gradient(135deg,#082f27,var(--teal-deep),var(--orange))!important}
 .collab-brand-name .inline-logo,.foot-brand .inline-logo{background:#082f27!important}
 .nav-by,.nav-links a{color:var(--ink-mid)!important}
@@ -997,6 +1001,8 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
 .foot-bottom{border-top-color:rgba(8,121,102,.12)!important}
 .soc-btn{background:rgba(255,255,255,.64)!important;border-color:rgba(8,121,102,.18)!important}
 .soc-btn:hover{background:var(--teal)!important;color:#fff!important}
+.soc-btn svg{width:18px;height:18px;display:block;fill:currentColor;stroke:currentColor;transition:transform .3s}
+.soc-btn:hover svg{transform:scale(1.1) rotate(-4deg)}
 .foot-orb1{background:rgba(32,169,143,.18)!important}
 .foot-orb2{background:rgba(238,128,34,.16)!important}
 
@@ -1207,7 +1213,7 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
   <a href="#" class="nav-brand">
     <div class="nav-fizzo"></div>
     <div class="nav-by">by</div>
-    <div class="nav-trop">TROPICANA</div>
+    <img class="nav-trop nav-trop-logo" src="tropicana-logo.svg" alt="Tropicana">
   </a>
   <ul class="nav-links">
     <li><a href="#why-fizzo">Why <span class="inline-logo" style="width:2.5em;height:0.8em;background-color:currentColor"></span></a></li>
@@ -1239,10 +1245,10 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
     <div class="hero-left">
       <div class="hero-badge">
         <div class="badge-pulse"></div>
-        ✦ Tropicana × Lizzo — Limited Collab Drop ✦
+        ✦ <img class="tropicana-inline-logo" src="tropicana-logo.svg" alt="Tropicana"> × Lizzo — Limited Collab Drop ✦
       </div>
       <div class="hero-fizzo-logo"></div>
-      <div class="hero-collab-lock">by <strong>Tropicana</strong> &nbsp;×&nbsp; <strong>Lizzo</strong></div>
+      <div class="hero-collab-lock">by <img class="tropicana-inline-logo" src="tropicana-logo.svg" alt="Tropicana"> &nbsp;×&nbsp; <strong>Lizzo</strong></div>
       <div class="hero-tagline">
         <span class="tg1">IT IS 100%</span>
         <span class="tg2">THAT SIP.</span>
@@ -1327,7 +1333,7 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
     <div class="collab-visual reveal sd2">
       <div class="collab-card">
         <div class="collab-logo-row">
-          <div class="collab-tropicana tropicana-wordmark">Tropicana</div>
+          <img class="collab-tropicana-logo" src="tropicana-logo.svg" alt="Tropicana">
           <div class="collab-brand-name"><span class="inline-logo" style="width:2.5em; height:1em; background-color: var(--white);"></span></div>
           <div class="collab-x">×</div>
           <div class="collab-artist-name">LIZZO</div>
@@ -1630,7 +1636,7 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
     <div class="s-tag gold">💛 The Movement</div>
     <h2 class="s-title" style="color:var(--ink)">COMMUNITY HUB</h2>
     <p class="s-sub ink">You're not a customer. You're the campaign. #FizzoMovement</p>
-    <div class="community-brand-row">Powered by <span class="tropicana-wordmark">Tropicana</span> × <span class="inline-logo" style="width:3.2em;height:1em"></span> × Lizzo</div>
+    <div class="community-brand-row">Powered by <img class="tropicana-inline-logo" src="tropicana-logo.svg" alt="Tropicana"> × <span class="inline-logo" style="width:3.2em;height:1em"></span> × Lizzo</div>
   </div>
   <div class="insta-feed reveal sd2">
     <article class="insta-card post-type">
@@ -1643,7 +1649,7 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
       <div class="insta-top"><div class="insta-user"><span class="insta-avatar">TR</span>@tropicana</div><div class="insta-menu">•••</div></div>
       <div class="insta-art">
         <div class="brand-stack">
-          <div class="tropicana-wordmark">Tropicana</div>
+          <img class="collab-tropicana-logo" src="tropicana-logo.svg" alt="Tropicana">
           <div class="fizzo-word">FIZZO</div>
           <div class="brand-sign">Lizzo</div>
         </div>
@@ -2179,14 +2185,22 @@ section.reveal,#eco-can .reveal,#community .reveal,#merch .reveal{opacity:1!impo
     <div class="foot-brand">
       <div>
         <div class="foot-fizzo">FIZZO</div>
-        <div class="foot-by">by Tropicana × Lizzo</div>
+        <div class="foot-by">by <img class="footer-tropicana-logo" src="tropicana-logo.svg" alt="Tropicana"> × Lizzo</div>
       </div>
       <p class="foot-desc">A bold postbiotic soda that loves your gut, your glow, and your confidence. Good As Hell — Inside &amp; Out. 100% That Sip.</p>
       <div class="foot-social">
-        <a class="soc-btn" href="#" aria-label="TikTok">TK</a>
-        <a class="soc-btn" href="#" aria-label="Instagram">IG</a>
-        <a class="soc-btn" href="#" aria-label="Spotify">SP</a>
-        <a class="soc-btn" href="#" aria-label="Twitter">X</a>
+        <a class="soc-btn" href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.1c1.1 1.2 2.4 1.9 4 2v3.2c-1.6 0-3-.5-4-1.3v6.4c0 3.3-2.4 5.7-5.8 5.7-3 0-5.4-2.1-5.4-5.1 0-3.2 2.6-5.3 5.9-5.1.3 0 .6.1.8.1v3.3c-.3-.1-.6-.2-1-.2-1.4 0-2.4.8-2.4 1.9 0 1.1.9 1.9 2.1 1.9 1.4 0 2.3-.8 2.3-2.5V3h3.5c.1.8.3 1.5 1 2.1z"/></svg>
+        </a>
+        <a class="soc-btn" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M7.5 3.8h9A3.7 3.7 0 0 1 20.2 7.5v9a3.7 3.7 0 0 1-3.7 3.7h-9a3.7 3.7 0 0 1-3.7-3.7v-9A3.7 3.7 0 0 1 7.5 3.8z"/><path fill="none" stroke="currentColor" stroke-width="2" d="M8.4 12a3.6 3.6 0 1 0 7.2 0 3.6 3.6 0 0 0-7.2 0z"/><path d="M17.3 6.7a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+        </a>
+        <a class="soc-btn" href="#" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19zm4.4 13.8c-.2.3-.6.4-.9.2-2.4-1.5-5.5-1.8-9.1-1-.3.1-.7-.1-.8-.5-.1-.3.1-.7.5-.8 4-.9 7.4-.5 10.1 1.2.3.2.4.6.2.9zm1.2-2.7c-.2.4-.7.5-1.1.3-2.8-1.7-7-2.2-10.2-1.2-.4.1-.8-.1-.9-.5-.1-.4.1-.8.5-.9 3.7-1.1 8.3-.6 11.4 1.4.4.2.5.6.3.9zm.1-2.8c-3.3-2-8.8-2.2-12-1.2-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 3.7-1.1 9.7-.9 13.5 1.4.4.3.6.8.3 1.2-.2.4-.8.6-1.3.3z"/></svg>
+        </a>
+        <a class="soc-btn" href="#" aria-label="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 10.4 21.4 2h-2.1l-6 7-4.8-7H2.7l7.6 11.1L2.5 22h2.1l6.6-7.7 5.3 7.7h5.8l-8.1-11.6zm-2.4 2.8-.8-1.1L4.8 3.6h2.7l4.7 6.6.8 1.1 6.7 9.2H17l-5.2-7.3z"/></svg>
+        </a>
       </div>
     </div>
     <div class="foot-col"><h4>Flavours</h4><ul><li><a href="#">Truth Hurts Tangerine</a></li><li><a href="#">About Damn Lime</a></li><li><a href="#">Good As Hell Guava</a></li></ul></div>
